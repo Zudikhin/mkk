@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <meta name="author" content="Yuriy Zudikhin https://t.me/Zudihin"/>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.7.14/css/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/style.css" />
+    
+  </head>
+
+  <body>
+
+    <header class="header">
+      <div class="header_mob">
+        <div class="container header_mob_top">
+          <button class="header_mob_top_burger">
+            <img src="img/header/burger.svg" alt="">
+          </button>
+          <a href="#" class="header_mob_top_logo">
+            <img src="img/header/logo.svg" alt="">
+          </a>
+          <div class="header_mob_top_search">
+            <img src="img/header/search.svg" alt="">
+          </div>
+        </div>
+        <div class="container header_mob_wrap">
+          <div class="header_mob_wrap_info">
+            <div class="header_mob_wrap_info_item">
+              <div class="header_mob_wrap_info_item_top">
+                <img src="img/header/plus.svg" alt="">
+                <p>Работаем ежедневно</p>
+              </div>
+              <span>7:00 до 22:00</span>
+            </div>
+            <div class="header_mob_wrap_info_item">
+              <div class="header_mob_wrap_info_item_top">
+                <img src="img/header/tel.svg" alt="">
+                <p>Предварительная запись</p>
+              </div>
+              <a href="tel:+79852275227">+7-985-227-5-227</a>
+            </div>
+          </div>
+          <button>Записаться на прием</button>
+        </div>
+      </div>
+      <div class="header_nav">
+        <div class="container">
+          <ul>
+            <li class="drop">
+              <a class="active" href="#">Главная
+                <svg width="8" height="5" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.11719 0.889999H7.14062C7.5625 0.889999 7.77344 1.40562 7.46875 1.71031L4.46875 4.71031C4.28125 4.89781 3.97656 4.89781 3.78906 4.71031L0.789062 1.71031C0.484375 1.40562 0.695312 0.889999 1.11719 0.889999Z" fill="#3668AB"/>
+                </svg>
+              </a>
+              <ul class="drop_menu">
+                <li>
+                  <a href="#">Menu 1 
+                    <svg width="8" height="4" viewBox="0 0 8 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0.726562 0H6.75C7.17188 0 7.38281 0.515625 7.07812 0.820312L4.07812 3.82031C3.89062 4.00781 3.58594 4.00781 3.39844 3.82031L0.398438 0.820312C0.09375 0.515625 0.304688 0 0.726562 0Z" fill="white"/>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">Menu 1</a>
+                </li>
+                <li>
+                  <a href="#">Menu 2</a>
+                </li>
+              </ul>
+            </li>
+            <li class="drop">
+              <a href="#">Услуги
+                <svg width="8" height="5" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.11719 0.889999H7.14062C7.5625 0.889999 7.77344 1.40562 7.46875 1.71031L4.46875 4.71031C4.28125 4.89781 3.97656 4.89781 3.78906 4.71031L0.789062 1.71031C0.484375 1.40562 0.695312 0.889999 1.11719 0.889999Z" fill="#3668AB"/>
+                </svg>
+              </a>
+              <ul class="drop_menu">
+                <li>
+                  <a href="#">Прием специалистов 
+                    <svg width="8" height="4" viewBox="0 0 8 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0.726562 0H6.75C7.17188 0 7.38281 0.515625 7.07812 0.820312L4.07812 3.82031C3.89062 4.00781 3.58594 4.00781 3.39844 3.82031L0.398438 0.820312C0.09375 0.515625 0.304688 0 0.726562 0Z" fill="white"/>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">Гастроскопия</a>
+                </li>
+                <li>
+                  <a href="#">Функциональная 
+                    диагностика</a>
+                </li>
+                <li>
+                  <a href="#">Ультразвуковое 
+                    исследование (УЗИ)</a>
+                </li>
+                <li>
+                  <a href="#">Лабораторная 
+                    диагностика</a>
+                </li>
+                <li>
+                  <a href="#">Ангиография 
+                    (рентгеноконтрастное 
+                    исследование сосудов)</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Расписание</a>
+            </li>
+            <li class="drop">
+              <a href="#">Врачи
+                <svg width="8" height="5" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.11719 0.889999H7.14062C7.5625 0.889999 7.77344 1.40562 7.46875 1.71031L4.46875 4.71031C4.28125 4.89781 3.97656 4.89781 3.78906 4.71031L0.789062 1.71031C0.484375 1.40562 0.695312 0.889999 1.11719 0.889999Z" fill="#3668AB"/>
+                </svg>
+              </a>
+              <ul class="drop_menu">
+                <li>
+                  <a href="#">Прием специалистов 
+                    <svg width="8" height="4" viewBox="0 0 8 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0.726562 0H6.75C7.17188 0 7.38281 0.515625 7.07812 0.820312L4.07812 3.82031C3.89062 4.00781 3.58594 4.00781 3.39844 3.82031L0.398438 0.820312C0.09375 0.515625 0.304688 0 0.726562 0Z" fill="white"/>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">Гастроскопия</a>
+                </li>
+                <li>
+                  <a href="#">Функциональная 
+                    диагностика</a>
+                </li>
+                <li>
+                  <a href="#">Ультразвуковое 
+                    исследование (УЗИ)</a>
+                </li>
+                <li>
+                  <a href="#">Лабораторная 
+                    диагностика</a>
+                </li>
+                <li>
+                  <a href="#">Ангиография 
+                    (рентгеноконтрастное 
+                    исследование сосудов)</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Контакты</a>
+            </li>
+            <li>
+              <a href="#">Новости</a>
+            </li>
+          </ul>
+          <div class="header_nav_search">
+            <img src="img/header/search.svg" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="header_wrap">
+        <div class="container">
+          <a href="#" class="header_wrap_logo">
+            <img src="img/header/logo.svg" alt="">
+          </a>
+          <div class="header_wrap_item">
+            <img src="img/header/plus.svg" alt="">
+            <div class="header_wrap_item_text">
+              <p>Работаем ежедневно</p>
+              <span>7:00 до 22:00</span>
+            </div>
+          </div>
+          <div class="header_wrap_item">
+            <img src="img/header/tel.svg" alt="">
+            <div class="header_wrap_item_text">
+              <p>Предварительная запись</p>
+              <a href="tel:+79852275227">+7-985-227-5-227</a>
+            </div>
+          </div>
+          <button>Записаться на прием</button>
+        </div>
+      </div>
+    </header>
+
+    <section class="main">
+      <div class="main_item">
+        <div class="container">
+          <div class="main_item_block">
+            <h2>Современный центр <br>
+              <span>инвазивной диагностики и лечения сердечно-сосудистой патологии</span>
+            </h2>
+          </div>
+        </div>
+        <img src="img/main/1.png" alt="">
+      </div>
+      <div class="main_item">
+        <div class="container">
+          <div class="main_item_block">
+            <h2>Забота о вашем сердце - наша главная миссия!</h2>
+          </div>
+        </div>
+        <img src="img/main/2.png" alt="">
+      </div>
+    </section>
+
+    <section class="care">
+      <div class="care_form">
+        <div class="container">
+          <form action="">
+            <div class="care_form_select">
+              <select>
+                <option selected>Выберите направление</option>
+                <option value="Hаправление 1">Hаправление 1</option>
+                <option value="Hаправление 2">Hаправление 2</option>
+                <option value="Hаправление 3">Hаправление 3</option>
+              </select>
+              <img src="img/care/direction.svg" alt="">
+            </div>
+            <div class="care_form_select">
+              <select>
+                <option selected>Выберите специалиста</option>
+                <option value="Прием кардиолога">Прием кардиолога</option>
+                <option value="Прием терапевта">Прием терапевта</option>
+                <option value="Прием нефролога">Прием нефролога</option>
+              </select>
+              <img src="img/care/icon_doc.svg" alt="">
+            </div>
+            <button type="submit" class="btn_default">Записаться на прием</button>
+          </form>
+        </div>
+      </div>
+      <img class="care_under" src="img/care/back.webp" alt="">
+      <div class="container">
+        <div class="care_block">
+          <div class="care_block_text">
+            <h2>Проявите заботу <br>
+              о своем сердце</h2>
+            <span>в нашей клинике</span>
+            <p>Клиникой руководит профессор Георгий Арташесович Газарян, под чьим руководством была создана Международная Кардиологическая Клиника. В течение многих лет Георгий Арташесович помогает людям в службе экстренной кардиологии в Н. В. Склифосовском Институте неотложной помощи.</p>
+            <p>В нашем клинико-диагностическом центре вы можете получить консультацию по терапевтическим направлениям, комплекс лабораторных и инструментальных методов исследования опытными специалистами, многие из которых ранее работали в неотложной медицине</p>
+            <div class="care_block_text_info">
+              <a href="#" class="btn_default">Контакты</a>
+              <div class="care_block_text_info_text">
+                <span>Предварительная запись</span>
+                <a href="tel:+79852275227">+7-985-227-5-227</a>
+              </div>
+            </div>
+          </div>
+          <div class="care_block_img">
+            <img src="img/care/1.png" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="diagnostics">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-6 col-xl-6 diagnostics_images">
+            <img class="diagnostics_images_show" src="img/diagnostics/1.png" alt="">
+            <div class="diagnostics_images_dots">
+              <img src="img/diagnostics/1.png" alt="">
+              <img src="img/diagnostics/1.png" alt="">
+              <img src="img/diagnostics/1.png" alt="">
+            </div>
+          </div>
+          <div class="col-12 col-lg-6 col-xl-6 diagnostics_text">
+            <span>Современное оборудование</span>
+            <h2>для точной диагностики</h2>
+            <ul>
+              <li>Клиника оснащена самым современным оборудованием по всем представленным направлениям</li>
+              <li>Наши пациенты получают широкий спектр диагностики не только сердечно-сосудистых заболеваний, но также в таких направлениях, как эндокринология, неврология и гастроэнтерология</li>
+              <li>Централизованная система медицинского обслуживания обеспечивает пациенту высокий уровень безопасности и внимания</li>
+            </ul>
+            <button>Записаться на прием</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="interests">
+      <div class="container interests_title">
+        <h2>Интересы пациентов <br> на первом месте</h2>
+      </div>
+      <div class="container interests_desk">
+        <div class="row">
+          <div class="col-lg-4 interests_desk_item">
+            <img src="img/interests/1.svg" alt="">
+            <p>Слаженная работа <br> команды врачей</p>
+          </div>
+          <div class="col-lg-4 interests_desk_item">
+            <img src="img/interests/2.svg" alt="">
+            <p>Тщательное <br> обследование пациентов</p>
+          </div>
+          <div class="col-lg-4 interests_desk_item">
+            <img src="img/interests/3.svg" alt="">
+            <p>Чуткое и доверительное <br> отношение к пациенту</p>
+          </div>
+          <div class="col-lg-4 interests_desk_item">
+            <img src="img/interests/4.svg" alt="">
+            <p>Комплексное обследование <br> и высокое качество услуг</p>
+          </div>
+          <div class="col-lg-4 interests_desk_item">
+            <img src="img/interests/5.svg" alt="">
+            <p>Своевременная оценка результатов <br>
+              и назначение лечения</p>
+          </div>
+          <div class="col-lg-4 interests_desk_item">
+            <img src="img/interests/6.svg" alt="">
+            <p>Новейшие диагностические <br>
+              и терапевтические технологий</p>
+          </div>
+        </div>
+      </div>
+      <div class="container interests_slider">
+        <div class="interests_slider_item">
+          <img src="img/interests/1.svg" alt="">
+          <p>Слаженная работа <br> команды врачей</p>
+        </div>
+        <div class="interests_slider_item">
+          <img src="img/interests/2.svg" alt="">
+          <p>Тщательное <br> обследование пациентов</p>
+        </div>
+        <div class="interests_slider_item">
+          <img src="img/interests/3.svg" alt="">
+          <p>Чуткое и доверительное <br> отношение к пациенту</p>
+        </div>
+        <div class="interests_slider_item">
+          <img src="img/interests/4.svg" alt="">
+          <p>Комплексное обследование <br> и высокое качество услуг</p>
+        </div>
+        <div class="interests_slider_item">
+          <img src="img/interests/5.svg" alt="">
+          <p>Своевременная оценка результатов <br>
+            и назначение лечения</p>
+        </div>
+        <div class="interests_slider_item">
+          <img src="img/interests/6.svg" alt="">
+          <p>Новейшие диагностические <br>
+            и терапевтические технологий</p>
+        </div>
+      </div>
+      <div class="interests_arrows">
+        <div class="interests_arrows_prev">
+          <img src="img/interests/prev.svg" alt="">
+        </div>
+        <div class="interests_arrows_next">
+          <img src="img/interests/next.svg" alt="">
+        </div>
+      </div>
+    </section>
+
+    <section class="directions">
+      <div class="container">
+        <div class="directions_block">
+          <h2>НАПРАВЛЕНИЯ</h2>
+          <p>Мы предлагаем самые передовые методы лечения и широкий спектр диагностики. <br> Наши врачи обладают высоким уровнем квалификации, чтобы обеспечить вам постоянную помощь и поддержку.</p>
+          <div class="directions_block_sliders">
+
+            <a href="#" class="directions_block_sliders_item">
+              <img class="directions_block_sliders_item_main" src="img/directions/1.png" alt="">
+              <div class="directions_block_sliders_item_wrap">
+                <img src="img/directions/icon_1.svg" alt="">
+                <div class="directions_block_sliders_item_wrap_text">
+                  <h5>Прием <br> специалистов</h5>
+                </div>
+              </div>
+            </a>
+
+            <a href="#" class="directions_block_sliders_item">
+              <img class="directions_block_sliders_item_main" src="img/directions/2.png" alt="">
+              <div class="directions_block_sliders_item_wrap">
+                <img src="img/directions/icon_2.svg" alt="">
+                <div class="directions_block_sliders_item_wrap_text">
+                  <h5>Гастроскопия</h5>
+                </div>
+              </div>
+            </a>
+
+            <a href="#" class="directions_block_sliders_item">
+              <img class="directions_block_sliders_item_main" src="img/directions/3.png" alt="">
+              <div class="directions_block_sliders_item_wrap">
+                <img src="img/directions/icon_3.svg" alt="">
+                <div class="directions_block_sliders_item_wrap_text">
+                  <h5>Функциональная диагностика</h5>
+                </div>
+              </div>
+            </a>
+
+            <a href="#" class="directions_block_sliders_item">
+              <img class="directions_block_sliders_item_main" src="img/directions/4.png" alt="">
+              <div class="directions_block_sliders_item_wrap">
+                <img src="img/directions/icon_4.svg" alt="">
+                <div class="directions_block_sliders_item_wrap_text">
+                  <h5>Ультразвуковое исследование (УЗИ)</h5>
+                </div>
+              </div>
+            </a>
+
+            <a href="#" class="directions_block_sliders_item">
+              <img class="directions_block_sliders_item_main" src="img/directions/5.png" alt="">
+              <div class="directions_block_sliders_item_wrap">
+                <img src="img/directions/icon_5.svg" alt="">
+                <div class="directions_block_sliders_item_wrap_text">
+                  <h5>Ангиография</h5>
+                  <span>(рентгеноконтрастное исследование сосудов)</span>
+                </div>
+              </div>
+            </a>
+
+            <a href="#" class="directions_block_sliders_item">
+              <img class="directions_block_sliders_item_main" src="img/directions/6.png" alt="">
+              <div class="directions_block_sliders_item_wrap">
+                <img src="img/directions/icon_6.svg" alt="">
+                <div class="directions_block_sliders_item_wrap_text">
+                  <h5>Лабораторная диагностика</h5>
+                </div>
+              </div>
+            </a>
+
+          </div>
+          <div class="directions_block_arrows">
+            <div class="directions_block_arrows_prev">
+              <img src="img/interests/prev.svg" alt="">
+            </div>
+            <div class="directions_block_arrows_next">
+              <img src="img/interests/next.svg" alt="">
+            </div>
+          </div>
+          <a href="#" class="home_all">
+            Все направления
+            <img src="img/directions/arrow.svg" alt="">
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="doctors">
+      <div class="container">
+        <div class="doctors_block">
+          <h2>НАШИ ВРАЧИ</h2>
+          <p class="doctors_block_desc">Мы собрали команду молодых и высококлассных специалистов, <br> единомышленников, любящих свое дело</p>
+          <div class="doctors_block_slider">
+            <a href="#" class="doctors_block_slider_item">
+              <div class="doctors_block_slider_item_wrap">
+                <div class="doctors_block_slider_item_wrap_img">
+                  <img src="img/doctors/1.png" alt="">
+                </div>
+                <div class="doctors_block_slider_item_wrap_text">
+                  <div class="doctors_block_slider_item_wrap_text_top">
+                    <span>Интервенционный кардиолог</span>
+                    <h5>Газарян Георгий Георгиевич</h5>
+                  </div>
+                  <p>Специализация: кардиология, нейроинтервенция <br>
+                    Стаж работы: 10 лет</p>
+                  <span><img src="img/doctors/mail.svg" alt="">info@ica.clinic</span>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="doctors_block_slider_item">
+              <div class="doctors_block_slider_item_wrap">
+                <div class="doctors_block_slider_item_wrap_img">
+                  <img src="img/doctors/2.png" alt="">
+                </div>
+                <div class="doctors_block_slider_item_wrap_text">
+                  <div class="doctors_block_slider_item_wrap_text_top">
+                    <span>Сердечно-сосудистый хирург</span>
+                    <h5>Исаев Георгий Александрович</h5>
+                  </div>
+                  <p>Специализация:сердечно-сосудистый хирург <br> 
+                    Стаж работы: 26 лет</p>
+                    <span><img src="img/doctors/mail.svg" alt="">info@ica.clinic</span>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="doctors_block_slider_item">
+              <div class="doctors_block_slider_item_wrap">
+                <div class="doctors_block_slider_item_wrap_img">
+                  <img src="img/doctors/3.png" alt="">
+                </div>
+                <div class="doctors_block_slider_item_wrap_text">
+                  <div class="doctors_block_slider_item_wrap_text_top">
+                    <span>Кардиохирург</span>
+                    <h5>Камбаров Сергей Юрьевич</h5>
+                  </div>
+                  <p>Специализация: малоинвазивная кардиохирургия <br>
+                    Стаж работы: 37 лет</p>
+                    <span><img src="img/doctors/mail.svg" alt="">info@ica.clinic</span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="doctors_block_arrows">
+            <div class="doctors_block_arrows_prev">
+              <img src="img/interests/prev.svg" alt="">
+            </div>
+            <div class="doctors_block_arrows_next">
+              <img src="img/interests/next.svg" alt="">
+            </div>
+          </div>
+          <a href="#" class="home_all">
+            Все врачи
+            <img src="img/directions/arrow.svg" alt="">
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="front_news">
+      <div class="front_news_mob">
+        <div class="container">
+          <div class="front_news_mob_title">
+            <img src="img/front_news/plus.svg" alt="">
+            <h2>ЗАПИСАТЬСЯ <br>
+              НА ОБСЛЕДОВАНИЕ</h2>
+          </div>
+          <form action="">
+            <input type="text" placeholder="Имя Фамилия">
+            <input type="email" placeholder="Email">
+            <input type="tel" placeholder="Номер телефона">
+            <input class="date" type="date" />
+            <select>
+              <option selected>Выберите направление</option>
+              <option value="Прием специалистов">Прием специалистов</option>
+              <option value="Лабораторная диагностика">Лабораторная диагностика</option>
+              <option value="Функциональная диагностика">Функциональная диагностика</option>
+            </select>
+            <select>
+              <option selected>Выберите специалиста</option>
+              <option value="Прием кардиолога">Прием кардиолога</option>
+              <option value="Прием терапевта">Прием терапевта</option>
+              <option value="Прием нефролога">Прием нефролога</option>
+            </select>
+            <button class="btn_default" type="submit">Записаться на прием</button>
+          </form>
+          <p>*Запись через сайт является предварительной. 
+            Мы свяжемся с Вами для подтверждения записи 
+            к специалисту. Гарантируем неразглашение персональных данных и отсутствие рекламных рассылок по указанному вами телефону. Ваши данные необходимы 
+            для обеспечения обратной связи и организации 
+            записи к специалисту клиники.</p>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-6 front_news_wrap">
+            <h2>Новости</h2>
+            <div class="front_news_wrap_list">
+              <a href="#" class="front_news_wrap_list_item">
+                <span>01.03.24</span>
+                <div class="front_news_wrap_list_item_text">
+                  <h5>ОТКРЫТИЕ КЛИНИКИ</h5>
+                  <p>Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст... <span>подробнее</span> </p>
+                </div>
+              </a>
+              <a href="#" class="front_news_wrap_list_item">
+                <span>01.03.24</span>
+                <div class="front_news_wrap_list_item_text">
+                  <h5>ПУБЛИКАЦИЯ</h5>
+                  <p>Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст... <span>подробнее</span></p>
+                </div>
+              </a>
+              <a href="#" class="front_news_wrap_list_item">
+                <span>01.03.24</span>
+                <div class="front_news_wrap_list_item_text">
+                  <h5>ПУБЛИКАЦИЯ СТАТЬИ</h5>
+                  <p>Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст... <span>подробнее</span></p>
+                </div>
+              </a>
+            </div>
+            <div class="front_news_wrap_arrows">
+              <div class="front_news_wrap_arrows_prev">
+                <img src="img/interests/prev.svg" alt="">
+              </div>
+              <div class="front_news_wrap_arrows_next">
+                <img src="img/interests/next.svg" alt="">
+              </div>
+            </div>
+            <a href="#" class="home_all">
+              Все новости
+              <img src="img/directions/arrow.svg" alt="">
+            </a>
+          </div>
+          <div class="col-lg-6 front_news_form">
+            <div class="front_news_form_title">
+              <img src="img/front_news/plus.svg" alt="">
+              <h2>ЗАПИСАТЬСЯ <br>
+                НА ОБСЛЕДОВАНИЕ</h2>
+            </div>
+            <form action="">
+              <input type="text" placeholder="Имя Фамилия">
+              <input type="email" placeholder="Email">
+              <input type="tel" placeholder="Номер телефона">
+              <input class="date" type="date" />
+              <select>
+                <option selected>Выберите направление</option>
+                <option value="Hаправление 1">Hаправление 1</option>
+                <option value="Hаправление 2">Hаправление 2</option>
+                <option value="Hаправление 3">Hаправление 3</option>
+              </select>
+              <select>
+                <option selected>Выберите специалиста</option>
+                <option value="Прием кардиолога">Прием кардиолога</option>
+                <option value="Прием терапевта">Прием терапевта</option>
+                <option value="Прием нефролога">Прием нефролога</option>
+              </select>
+              <button class="btn_default" type="submit">Записаться на прием</button>
+            </form>
+            <p>*Запись через сайт является предварительной. 
+              Мы свяжемся с Вами для подтверждения записи 
+              к специалисту. Гарантируем неразглашение персональных данных и отсутствие рекламных рассылок по указанному вами телефону. Ваши данные необходимы 
+              для обеспечения обратной связи и организации 
+              записи к специалисту клиники.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-xl-2">
+            <ul>
+              <li>
+                <a href="#">Услуги</a>
+              </li>
+              <li>
+                <a href="#">Расписание</a>
+              </li>
+              <li>
+                <a href="">Врачи</a>
+              </li>
+              <li>
+                <a href="">Контакты</a>
+              </li>
+              <li>
+                <a href="">Новости</a>
+              </li>
+              <li>
+                <a href="">Цены</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-6 col-xl-3">
+            <div class="footer_item">
+              <h3>Адрес</h3>
+              <div class="footer_item_list">
+                <div class="footer_item_list_wrap">
+                  <p>г. Москва, ул 5-я кожуховская, дом 28</p>
+                </div>
+                <div class="footer_item_list_wrap">
+                  <span>Для связи с нами</span>
+                  <p>Тел: <a href="tel:+79852275227">+7-985-227-5-227</a></p>
+                </div>
+
+                <div class="footer_item_list_wrap">
+                  <span>Часы работы</span>
+                  <p>C 7:00 до 20:00 ПН-ВС</p>
+                </div>
+
+                <div class="footer_item_list_wrap">
+                  <span>электронная почта:</span>
+                  <p><a href="mailto:info@ica.clinic.">info@ica.clinic.</a></p>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-xl-4">
+            <div class="footer_item">
+              <h3>РЕКВИЗИТЫ</h3>
+              <div class="footer_item_list">
+                <div class="footer_item_list_wrap">
+                  <p>АНО «Международная клиника кардиологии»</p>
+                </div>
+                <div class="footer_item_list_wrap">
+                  <p>ИНН:11111111111111111</p>
+                </div>
+                <div class="footer_item_list_wrap">
+                  <p>ОГРН:11111111111111111</p>
+                </div>
+                <div class="footer_item_list_wrap">
+                  <span>ЮРИДИЧЕСКИЙ АДРЕС</span>
+                  <p>117393, Г. Москва ул. Ак пилюгина, д. 26/2</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-xl-3">
+            <div class="footer_social">
+              <a href="#">
+                <img src="img/footer/vk.svg" alt="">
+              </a>
+              <a href="#">
+                <img src="img/footer/telegram.svg" alt="">
+              </a>
+              <a href="#">
+                <img src="img/footer/wap.svg" alt="">
+              </a>
+              <a href="#">
+                <img src="img/footer/yt.svg" alt="">
+              </a>
+            </div>
+            <div class="footer_links">
+              <a href="#">Стать партнером</a>
+              <a href="#">Вакансии</a>
+              <a href="#">Оставить отзыв</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="footer_under">
+      <div class="container">
+        <div class="footer_under_links">
+          <a href="#">Условия использования</a>
+          <span>|</span>
+          <a href="#">Политика конфиденциальности</a>
+        </div>
+        <p>© 2024 Международная клиника кардиологии. Все права защищены.</p>
+      </div>
+    </div>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js" integrity="sha512-GDey37RZAxFkpFeJorEUwNoIbkTwsyC736KNSYucu1WJWFK9qTdzYub8ATxktr6Dwke7nbFaioypzbDOQykoRg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/main.js"></script>
+
+  </body>
+</html>
+
+<script>
+  $('.date').datetimepicker({
+    format:'DD.MM.YYYY'
+  });
+</script>
