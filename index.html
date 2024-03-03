@@ -16,6 +16,7 @@
 
   <body>
 
+    <!-- HEADER  -->
     <header class="header">
       <div class="header_mob">
         <div class="container header_mob_top">
@@ -26,7 +27,20 @@
             <img src="img/header/logo.svg" alt="">
           </a>
           <div class="header_mob_top_search">
-            <img src="img/header/search.svg" alt="">
+            <button class="header_mob_top_search_glass">
+              <img src="img/header/search.svg" alt="">
+            </button>
+            <button class="header_mob_top_search_close">
+              <img src="img/header/close_blue.svg" alt="">
+            </button>
+            <div class="header_mob_top_search_form">
+              <form action="">
+                <input type="text" placeholder="Поиск">
+                <button type="submit">
+                  <img src="img/header/search.svg" alt="">
+                </button>
+              </form>
+            </div>
           </div>
         </div>
         <div class="container header_mob_wrap">
@@ -46,7 +60,7 @@
               <a href="tel:+79852275227">+7-985-227-5-227</a>
             </div>
           </div>
-          <button>Записаться на прием</button>
+          <button data-bs-toggle="modal" data-bs-target="#appointment">Записаться на прием</button>
         </div>
       </div>
       <div class="header_nav">
@@ -157,7 +171,20 @@
             </li>
           </ul>
           <div class="header_nav_search">
-            <img src="img/header/search.svg" alt="">
+            <button class="header_nav_search_glass">
+              <img src="img/header/search.svg" alt="">
+            </button>
+            <button class="header_nav_search_close">
+              <img src="img/header/close_blue.svg" alt="">
+            </button>
+            <div class="header_nav_search_form">
+              <form action="">
+                <input type="text" placeholder="Поиск">
+                <button type="submit">
+                  <img src="img/header/search.svg" alt="">
+                </button>
+              </form>
+            </div>
           </div>
         </div>
       </div>
@@ -180,11 +207,13 @@
               <a href="tel:+79852275227">+7-985-227-5-227</a>
             </div>
           </div>
-          <button>Записаться на прием</button>
+          <button data-bs-toggle="modal" data-bs-target="#appointment">Записаться на прием</button>
         </div>
       </div>
     </header>
+    <!-- HEADER  -->
 
+    <!-- MAIN  -->
     <section class="main">
       <div class="main_item">
         <div class="container">
@@ -205,7 +234,9 @@
         <img src="img/main/2.png" alt="">
       </div>
     </section>
+    <!-- MAIN  -->
 
+    <!-- CARE  -->
     <section class="care">
       <div class="care_form">
         <div class="container">
@@ -255,7 +286,9 @@
         </div>
       </div>
     </section>
+    <!-- CARE  -->
 
+    <!-- DIAGNOSTICS  -->
     <section class="diagnostics">
       <div class="container">
         <div class="row">
@@ -275,12 +308,14 @@
               <li>Наши пациенты получают широкий спектр диагностики не только сердечно-сосудистых заболеваний, но также в таких направлениях, как эндокринология, неврология и гастроэнтерология</li>
               <li>Централизованная система медицинского обслуживания обеспечивает пациенту высокий уровень безопасности и внимания</li>
             </ul>
-            <button>Записаться на прием</button>
+            <button data-bs-toggle="modal" data-bs-target="#appointment">Записаться на прием</button>
           </div>
         </div>
       </div>
     </section>
+    <!-- DIAGNOSTICS  -->
 
+    <!-- INTERESTS  -->
     <section class="interests">
       <div class="container interests_title">
         <h2>Интересы пациентов <br> на первом месте</h2>
@@ -352,7 +387,9 @@
         </div>
       </div>
     </section>
+    <!-- INTERESTS  -->
 
+    <!-- DIRECTIONS   -->
     <section class="directions">
       <div class="container">
         <div class="directions_block">
@@ -437,7 +474,9 @@
         </div>
       </div>
     </section>
+    <!-- DIRECTIONS   -->
 
+    <!-- DOCTORS  -->
     <section class="doctors">
       <div class="container">
         <div class="doctors_block">
@@ -508,7 +547,9 @@
         </div>
       </div>
     </section>
+    <!-- DOCTORS  -->
 
+    <!-- FRONT_NEWS  -->
     <section class="front_news">
       <div class="front_news_mob">
         <div class="container">
@@ -521,7 +562,7 @@
             <input type="text" placeholder="Имя Фамилия">
             <input type="email" placeholder="Email">
             <input type="tel" placeholder="Номер телефона">
-            <input class="date" type="date" />
+            <!-- <input class="date" type="date" /> -->
             <select>
               <option selected>Выберите направление</option>
               <option value="Прием специалистов">Прием специалистов</option>
@@ -617,7 +658,9 @@
         </div>
       </div>
     </section>
+     <!-- FRONT_NEWS  -->
 
+     <!-- FOOTER  -->
     <footer class="footer">
       <div class="container">
         <div class="row">
@@ -712,7 +755,7 @@
         </div>
       </div>
     </footer>
-
+    
     <div class="footer_under">
       <div class="container">
         <div class="footer_under_links">
@@ -723,19 +766,170 @@
         <p>© 2024 Международная клиника кардиологии. Все права защищены.</p>
       </div>
     </div>
+     <!-- FOOTER  -->
+
+     <!-- MODAL  -->
+    <div class="modal fade" id="appointment" tabindex="-1" aria-labelledby="appointmentLabel" aria-hidden="true">
+      <div class="modal-dialog modal_white">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="vacanciesLabel">ЗАПИСАТЬСЯ НА ПРИЁМ</h5>
+            <button type="button" data-bs-dismiss="modal" aria-label="Close">
+              <img src="img/modal/close.svg" alt="">
+            </button>
+          </div>
+          <div class="modal-body">
+            <form action="">
+              <input type="text" placeholder="Услуга">
+              <input class="date" type="date" />
+              <input type="text" placeholder="Время">
+              <input type="text" placeholder="ФИО">
+              <input type="tel" placeholder="Номер телефона">
+              <input type="email" placeholder="Почта">
+              <div class="modal_submit">
+                <button type="submit" class="btn_default">Записаться на прием</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="drom_menu">
+      <div class="drom_menu_header">
+        <div class="drom_menu_header_close">
+          <img src="img/modal/close.svg" alt="">
+        </div>
+      </div>
+      <ul>
+        <li class="drop active">
+          <div class="drom_menu_top">
+            <a class="active" href="#">Главная</a>
+            <button>
+              <svg width="8" height="5" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.11719 0.889999H7.14062C7.5625 0.889999 7.77344 1.40562 7.46875 1.71031L4.46875 4.71031C4.28125 4.89781 3.97656 4.89781 3.78906 4.71031L0.789062 1.71031C0.484375 1.40562 0.695312 0.889999 1.11719 0.889999Z" fill="#3668AB"/>
+              </svg>
+            </button>
+          </div>
+          <ul class="drop_menu">
+            <li>
+              <a href="#">Menu 1 
+                <svg width="8" height="4" viewBox="0 0 8 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0.726562 0H6.75C7.17188 0 7.38281 0.515625 7.07812 0.820312L4.07812 3.82031C3.89062 4.00781 3.58594 4.00781 3.39844 3.82031L0.398438 0.820312C0.09375 0.515625 0.304688 0 0.726562 0Z" fill="white"/>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#">Menu 1</a>
+            </li>
+            <li>
+              <a href="#">Menu 2</a>
+            </li>
+          </ul>
+        </li>
+        <li class="drop">
+          <div class="drom_menu_top">
+            <a class="active" href="#">Услуги</a>
+            <button>
+              <svg width="8" height="5" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.11719 0.889999H7.14062C7.5625 0.889999 7.77344 1.40562 7.46875 1.71031L4.46875 4.71031C4.28125 4.89781 3.97656 4.89781 3.78906 4.71031L0.789062 1.71031C0.484375 1.40562 0.695312 0.889999 1.11719 0.889999Z" fill="#3668AB"/>
+              </svg>
+            </button>
+          </div>
+          <ul class="drop_menu">
+            <li>
+              <a href="#">Прием специалистов 
+                <svg width="8" height="4" viewBox="0 0 8 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0.726562 0H6.75C7.17188 0 7.38281 0.515625 7.07812 0.820312L4.07812 3.82031C3.89062 4.00781 3.58594 4.00781 3.39844 3.82031L0.398438 0.820312C0.09375 0.515625 0.304688 0 0.726562 0Z" fill="white"/>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#">Гастроскопия</a>
+            </li>
+            <li>
+              <a href="#">Функциональная 
+                диагностика</a>
+            </li>
+            <li>
+              <a href="#">Ультразвуковое 
+                исследование (УЗИ)</a>
+            </li>
+            <li>
+              <a href="#">Лабораторная 
+                диагностика</a>
+            </li>
+            <li>
+              <a href="#">Ангиография 
+                (рентгеноконтрастное 
+                исследование сосудов)</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <div class="drom_menu_top">
+            <a href="#">Расписание</a>
+          </div>
+        </li>
+        <li class="drop">
+          <div class="drom_menu_top">
+            <a class="active" href="#">Врачи</a>
+            <button>
+              <svg width="8" height="5" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.11719 0.889999H7.14062C7.5625 0.889999 7.77344 1.40562 7.46875 1.71031L4.46875 4.71031C4.28125 4.89781 3.97656 4.89781 3.78906 4.71031L0.789062 1.71031C0.484375 1.40562 0.695312 0.889999 1.11719 0.889999Z" fill="#3668AB"/>
+              </svg>
+            </button>
+          </div>
+          <ul class="drop_menu">
+            <li>
+              <a href="#">Прием специалистов 
+                <svg width="8" height="4" viewBox="0 0 8 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0.726562 0H6.75C7.17188 0 7.38281 0.515625 7.07812 0.820312L4.07812 3.82031C3.89062 4.00781 3.58594 4.00781 3.39844 3.82031L0.398438 0.820312C0.09375 0.515625 0.304688 0 0.726562 0Z" fill="white"/>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#">Гастроскопия</a>
+            </li>
+            <li>
+              <a href="#">Функциональная 
+                диагностика</a>
+            </li>
+            <li>
+              <a href="#">Ультразвуковое 
+                исследование (УЗИ)</a>
+            </li>
+            <li>
+              <a href="#">Лабораторная 
+                диагностика</a>
+            </li>
+            <li>
+              <a href="#">Ангиография 
+                (рентгеноконтрастное 
+                исследование сосудов)</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <div class="drom_menu_top">
+            <a href="#">Контакты</a>
+          </div>
+        </li>
+        <li>
+          <div class="drom_menu_top">
+            <a href="#">Новости</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <!-- MODAL  -->
 
     <script src="js/jquery-3.6.0.min.js"></script>
-    <script src="js/bootstrap.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js" integrity="sha512-GDey37RZAxFkpFeJorEUwNoIbkTwsyC736KNSYucu1WJWFK9qTdzYub8ATxktr6Dwke7nbFaioypzbDOQykoRg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/bootstrap.js"></script>
     <script src="js/jquery.nice-select.min.js"></script>
     <script src="js/slick.js"></script>
     <script src="js/main.js"></script>
 
   </body>
 </html>
-
-<script>
-  $('.date').datetimepicker({
-    format:'DD.MM.YYYY'
-  });
-</script>

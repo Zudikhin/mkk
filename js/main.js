@@ -1,11 +1,38 @@
 $(document).ready(function() {
     "use strict";
 
-    $(".diagnostics_images_dots img").click(function() {
-        var src = $(this).attr("src");
-        $(".diagnostics_images_show").attr('src', src);
+    // HEADER 
+    $(".header_mob_top_burger").click(function() {
+      $(".drom_menu").addClass("active");
     });
 
+    $(".drom_menu_header_close").click(function() {
+      $(".drom_menu").removeClass("active");
+    });
+    
+    $(".header_mob_top_search_glass").click(function() {
+      $(".header_mob_top_search").addClass("active");
+    });
+
+    $(".header_mob_top_search_close").click(function() {
+      $(".header_mob_top_search").removeClass("active");
+    });
+
+    $(".header_nav_search_glass").click(function() {
+      $(".header_nav_search").addClass("active");
+    });
+
+    $(".header_nav_search_close").click(function() {
+      $(".header_nav_search").removeClass("active");
+    });
+
+    $(".drom_menu_top button").click(function() {
+      $(this).parent().parent().find(".drop_menu").slideToggle();
+      $(this).toggleClass("active");
+    });
+    // HEADER 
+    
+    // MAIN 
     $('.main').slick({
       slidesToShow: 1,
       slidesToScroll: 1,
@@ -15,7 +42,16 @@ $(document).ready(function() {
       arrows: false,
       fade: true
     });
+    // MAIN 
 
+    // DIAGNOSTICS 
+    $(".diagnostics_images_dots img").click(function() {
+        var src = $(this).attr("src");
+        $(".diagnostics_images_show").attr('src', src);
+    });
+    // DIAGNOSTICS 
+    
+    // INTERESTS 
     $('.interests_slider').slick({
       slidesToShow: 1,
       slidesToScroll: 1,
@@ -26,7 +62,9 @@ $(document).ready(function() {
       prevArrow: $('.interests_arrows_prev'),
           nextArrow: $('.interests_arrows_next')
     });
+    // INTERESTS 
 
+    // DIRECTIONS
     $('.directions_block_sliders').slick({
         slidesToShow: 3,
         slidesToScroll: 1,
@@ -55,7 +93,9 @@ $(document).ready(function() {
             }
           ]
     });
+    // DIRECTIONS
 
+    // DOCTORS
     $('.doctors_block_slider').slick({
         slidesToShow: 2,
         slidesToScroll: 1,
@@ -78,9 +118,9 @@ $(document).ready(function() {
             }
           ]
     });
+    // DOCTORS
 
-    $("select").niceSelect();
-
+    // FRONT_NEWS 
     if ($(window).width() < 992) {
       $('.front_news_wrap_list').slick({
         slidesToShow: 1,
@@ -95,5 +135,25 @@ $(document).ready(function() {
         nextArrow: $('.front_news_wrap_arrows_next')
       });
     }
+    // FRONT_NEWS 
 
+
+    $(document).click(function(event) { 
+      var $target = $(event.target);
+      if(!$target.closest('.header_nav_search').length && $('.header_nav_search').is(":visible")) {
+        $(".header_nav_search").removeClass("active");
+      }
+      if(!$target.closest('.header_mob_top_search').length && $('.header_mob_top_search').is(":visible")) {
+        $(".header_mob_top_search").removeClass("active");
+      } 
+    });
+
+    $("select").niceSelect();
+
+    if($(".date").length) {
+      $(".date").datetimepicker({
+        format:'DD.MM.YYYY'
+      });
+    }
+    
 });

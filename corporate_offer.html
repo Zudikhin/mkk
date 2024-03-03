@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <meta name="author" content="Yuriy Zudikhin https://t.me/Zudihin"/>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.7.14/css/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/style.css" />
+    
+  </head>
+
+  <body>
+
+    <!-- HEADER  -->
+    <header class="header">
+      <div class="header_mob">
+        <div class="container header_mob_top">
+          <button class="header_mob_top_burger">
+            <img src="img/header/burger.svg" alt="">
+          </button>
+          <a href="#" class="header_mob_top_logo">
+            <img src="img/header/logo.svg" alt="">
+          </a>
+          <div class="header_mob_top_search">
+            <button class="header_mob_top_search_glass">
+              <img src="img/header/search.svg" alt="">
+            </button>
+            <button class="header_mob_top_search_close">
+              <img src="img/header/close_blue.svg" alt="">
+            </button>
+            <div class="header_mob_top_search_form">
+              <form action="">
+                <input type="text" placeholder="Поиск">
+                <button type="submit">
+                  <img src="img/header/search.svg" alt="">
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="container header_mob_wrap">
+          <div class="header_mob_wrap_info">
+            <div class="header_mob_wrap_info_item">
+              <div class="header_mob_wrap_info_item_top">
+                <img src="img/header/plus.svg" alt="">
+                <p>Работаем ежедневно</p>
+              </div>
+              <span>7:00 до 22:00</span>
+            </div>
+            <div class="header_mob_wrap_info_item">
+              <div class="header_mob_wrap_info_item_top">
+                <img src="img/header/tel.svg" alt="">
+                <p>Предварительная запись</p>
+              </div>
+              <a href="tel:+79852275227">+7-985-227-5-227</a>
+            </div>
+          </div>
+          <button data-bs-toggle="modal" data-bs-target="#appointment">Записаться на прием</button>
+        </div>
+      </div>
+      <div class="header_nav">
+        <div class="container">
+          <ul>
+            <li class="drop">
+              <a class="active" href="#">Главная
+                <svg width="8" height="5" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.11719 0.889999H7.14062C7.5625 0.889999 7.77344 1.40562 7.46875 1.71031L4.46875 4.71031C4.28125 4.89781 3.97656 4.89781 3.78906 4.71031L0.789062 1.71031C0.484375 1.40562 0.695312 0.889999 1.11719 0.889999Z" fill="#3668AB"/>
+                </svg>
+              </a>
+              <ul class="drop_menu">
+                <li>
+                  <a href="#">Menu 1 
+                    <svg width="8" height="4" viewBox="0 0 8 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0.726562 0H6.75C7.17188 0 7.38281 0.515625 7.07812 0.820312L4.07812 3.82031C3.89062 4.00781 3.58594 4.00781 3.39844 3.82031L0.398438 0.820312C0.09375 0.515625 0.304688 0 0.726562 0Z" fill="white"/>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">Menu 1</a>
+                </li>
+                <li>
+                  <a href="#">Menu 2</a>
+                </li>
+              </ul>
+            </li>
+            <li class="drop">
+              <a href="#">Услуги
+                <svg width="8" height="5" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.11719 0.889999H7.14062C7.5625 0.889999 7.77344 1.40562 7.46875 1.71031L4.46875 4.71031C4.28125 4.89781 3.97656 4.89781 3.78906 4.71031L0.789062 1.71031C0.484375 1.40562 0.695312 0.889999 1.11719 0.889999Z" fill="#3668AB"/>
+                </svg>
+              </a>
+              <ul class="drop_menu">
+                <li>
+                  <a href="#">Прием специалистов 
+                    <svg width="8" height="4" viewBox="0 0 8 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0.726562 0H6.75C7.17188 0 7.38281 0.515625 7.07812 0.820312L4.07812 3.82031C3.89062 4.00781 3.58594 4.00781 3.39844 3.82031L0.398438 0.820312C0.09375 0.515625 0.304688 0 0.726562 0Z" fill="white"/>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">Гастроскопия</a>
+                </li>
+                <li>
+                  <a href="#">Функциональная 
+                    диагностика</a>
+                </li>
+                <li>
+                  <a href="#">Ультразвуковое 
+                    исследование (УЗИ)</a>
+                </li>
+                <li>
+                  <a href="#">Лабораторная 
+                    диагностика</a>
+                </li>
+                <li>
+                  <a href="#">Ангиография 
+                    (рентгеноконтрастное 
+                    исследование сосудов)</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Расписание</a>
+            </li>
+            <li class="drop">
+              <a href="#">Врачи
+                <svg width="8" height="5" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.11719 0.889999H7.14062C7.5625 0.889999 7.77344 1.40562 7.46875 1.71031L4.46875 4.71031C4.28125 4.89781 3.97656 4.89781 3.78906 4.71031L0.789062 1.71031C0.484375 1.40562 0.695312 0.889999 1.11719 0.889999Z" fill="#3668AB"/>
+                </svg>
+              </a>
+              <ul class="drop_menu">
+                <li>
+                  <a href="#">Прием специалистов 
+                    <svg width="8" height="4" viewBox="0 0 8 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0.726562 0H6.75C7.17188 0 7.38281 0.515625 7.07812 0.820312L4.07812 3.82031C3.89062 4.00781 3.58594 4.00781 3.39844 3.82031L0.398438 0.820312C0.09375 0.515625 0.304688 0 0.726562 0Z" fill="white"/>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">Гастроскопия</a>
+                </li>
+                <li>
+                  <a href="#">Функциональная 
+                    диагностика</a>
+                </li>
+                <li>
+                  <a href="#">Ультразвуковое 
+                    исследование (УЗИ)</a>
+                </li>
+                <li>
+                  <a href="#">Лабораторная 
+                    диагностика</a>
+                </li>
+                <li>
+                  <a href="#">Ангиография 
+                    (рентгеноконтрастное 
+                    исследование сосудов)</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Контакты</a>
+            </li>
+            <li>
+              <a href="#">Новости</a>
+            </li>
+          </ul>
+          <div class="header_nav_search">
+            <button class="header_nav_search_glass">
+              <img src="img/header/search.svg" alt="">
+            </button>
+            <button class="header_nav_search_close">
+              <img src="img/header/close_blue.svg" alt="">
+            </button>
+            <div class="header_nav_search_form">
+              <form action="">
+                <input type="text" placeholder="Поиск">
+                <button type="submit">
+                  <img src="img/header/search.svg" alt="">
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header_wrap">
+        <div class="container">
+          <a href="#" class="header_wrap_logo">
+            <img src="img/header/logo.svg" alt="">
+          </a>
+          <div class="header_wrap_item">
+            <img src="img/header/plus.svg" alt="">
+            <div class="header_wrap_item_text">
+              <p>Работаем ежедневно</p>
+              <span>7:00 до 22:00</span>
+            </div>
+          </div>
+          <div class="header_wrap_item">
+            <img src="img/header/tel.svg" alt="">
+            <div class="header_wrap_item_text">
+              <p>Предварительная запись</p>
+              <a href="tel:+79852275227">+7-985-227-5-227</a>
+            </div>
+          </div>
+          <button data-bs-toggle="modal" data-bs-target="#appointment">Записаться на прием</button>
+        </div>
+      </div>
+    </header>
+    <!-- HEADER  -->
+
+    <section class="corporate">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-4 sidebar">
+            
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DEFAULT  -->
+    <section class="default" style="background: url(img/default/back_1.png); background-size: cover; background-position: 50%;">
+      <div class="container">
+        <div class="default_block">
+          <h1>Корпоративное предложение</h1>
+          <div class="breadcrumbs">
+            <a href="#">Главная</a>
+            <span> / </span>
+            <a href="#">Услуги</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- DEFAULT  -->
+
+    <!-- FOOTER  -->
+    <section class="upper_footer">
+      <div class="container">
+        <div class="upper_footer_block">
+          <p>Комплексный подход <br>
+            к здоровью пациента</p>
+          <div class="upper_footer_block_images">
+            <img src="img/footer/logo_1.svg" alt="">
+            <img src="img/footer/logo_2.svg" alt="">
+            <img src="img/footer/logo_3.svg" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-xl-2">
+            <ul>
+              <li>
+                <a href="#">Услуги</a>
+              </li>
+              <li>
+                <a href="#">Расписание</a>
+              </li>
+              <li>
+                <a href="">Врачи</a>
+              </li>
+              <li>
+                <a href="">Контакты</a>
+              </li>
+              <li>
+                <a href="">Новости</a>
+              </li>
+              <li>
+                <a href="">Цены</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-6 col-xl-3">
+            <div class="footer_item">
+              <h3>Адрес</h3>
+              <div class="footer_item_list">
+                <div class="footer_item_list_wrap">
+                  <p>г. Москва, ул 5-я кожуховская, дом 28</p>
+                </div>
+                <div class="footer_item_list_wrap">
+                  <span>Для связи с нами</span>
+                  <p>Тел: <a href="tel:+79852275227">+7-985-227-5-227</a></p>
+                </div>
+
+                <div class="footer_item_list_wrap">
+                  <span>Часы работы</span>
+                  <p>C 7:00 до 20:00 ПН-ВС</p>
+                </div>
+
+                <div class="footer_item_list_wrap">
+                  <span>электронная почта:</span>
+                  <p><a href="mailto:info@ica.clinic.">info@ica.clinic.</a></p>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-xl-4">
+            <div class="footer_item">
+              <h3>РЕКВИЗИТЫ</h3>
+              <div class="footer_item_list">
+                <div class="footer_item_list_wrap">
+                  <p>АНО «Международная клиника кардиологии»</p>
+                </div>
+                <div class="footer_item_list_wrap">
+                  <p>ИНН:11111111111111111</p>
+                </div>
+                <div class="footer_item_list_wrap">
+                  <p>ОГРН:11111111111111111</p>
+                </div>
+                <div class="footer_item_list_wrap">
+                  <span>ЮРИДИЧЕСКИЙ АДРЕС</span>
+                  <p>117393, Г. Москва ул. Ак пилюгина, д. 26/2</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-xl-3">
+            <div class="footer_social">
+              <a href="#">
+                <img src="img/footer/vk.svg" alt="">
+              </a>
+              <a href="#">
+                <img src="img/footer/telegram.svg" alt="">
+              </a>
+              <a href="#">
+                <img src="img/footer/wap.svg" alt="">
+              </a>
+              <a href="#">
+                <img src="img/footer/yt.svg" alt="">
+              </a>
+            </div>
+            <div class="footer_links">
+              <a href="#">Стать партнером</a>
+              <a href="#">Вакансии</a>
+              <a href="#">Оставить отзыв</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+    <div class="footer_under">
+      <div class="container">
+        <div class="footer_under_links">
+          <a href="#">Условия использования</a>
+          <span>|</span>
+          <a href="#">Политика конфиденциальности</a>
+        </div>
+        <p>© 2024 Международная клиника кардиологии. Все права защищены.</p>
+      </div>
+    </div>
+     <!-- FOOTER  -->
+
+     <!-- MODAL  -->
+    <div class="modal fade" id="appointment" tabindex="-1" aria-labelledby="appointmentLabel" aria-hidden="true">
+      <div class="modal-dialog modal_white">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="vacanciesLabel">ЗАПИСАТЬСЯ НА ПРИЁМ</h5>
+            <button type="button" data-bs-dismiss="modal" aria-label="Close">
+              <img src="img/modal/close.svg" alt="">
+            </button>
+          </div>
+          <div class="modal-body">
+            <form action="">
+              <input type="text" placeholder="Услуга">
+              <input class="date" type="date" />
+              <input type="text" placeholder="Время">
+              <input type="text" placeholder="ФИО">
+              <input type="tel" placeholder="Номер телефона">
+              <input type="email" placeholder="Почта">
+              <div class="modal_submit">
+                <button type="submit" class="btn_default">Записаться на прием</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="drom_menu">
+      <div class="drom_menu_header">
+        <div class="drom_menu_header_close">
+          <img src="img/modal/close.svg" alt="">
+        </div>
+      </div>
+      <ul>
+        <li class="drop active">
+          <div class="drom_menu_top">
+            <a class="active" href="#">Главная</a>
+            <button>
+              <svg width="8" height="5" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.11719 0.889999H7.14062C7.5625 0.889999 7.77344 1.40562 7.46875 1.71031L4.46875 4.71031C4.28125 4.89781 3.97656 4.89781 3.78906 4.71031L0.789062 1.71031C0.484375 1.40562 0.695312 0.889999 1.11719 0.889999Z" fill="#3668AB"/>
+              </svg>
+            </button>
+          </div>
+          <ul class="drop_menu">
+            <li>
+              <a href="#">Menu 1 
+                <svg width="8" height="4" viewBox="0 0 8 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0.726562 0H6.75C7.17188 0 7.38281 0.515625 7.07812 0.820312L4.07812 3.82031C3.89062 4.00781 3.58594 4.00781 3.39844 3.82031L0.398438 0.820312C0.09375 0.515625 0.304688 0 0.726562 0Z" fill="white"/>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#">Menu 1</a>
+            </li>
+            <li>
+              <a href="#">Menu 2</a>
+            </li>
+          </ul>
+        </li>
+        <li class="drop">
+          <div class="drom_menu_top">
+            <a class="active" href="#">Услуги</a>
+            <button>
+              <svg width="8" height="5" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.11719 0.889999H7.14062C7.5625 0.889999 7.77344 1.40562 7.46875 1.71031L4.46875 4.71031C4.28125 4.89781 3.97656 4.89781 3.78906 4.71031L0.789062 1.71031C0.484375 1.40562 0.695312 0.889999 1.11719 0.889999Z" fill="#3668AB"/>
+              </svg>
+            </button>
+          </div>
+          <ul class="drop_menu">
+            <li>
+              <a href="#">Прием специалистов 
+                <svg width="8" height="4" viewBox="0 0 8 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0.726562 0H6.75C7.17188 0 7.38281 0.515625 7.07812 0.820312L4.07812 3.82031C3.89062 4.00781 3.58594 4.00781 3.39844 3.82031L0.398438 0.820312C0.09375 0.515625 0.304688 0 0.726562 0Z" fill="white"/>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#">Гастроскопия</a>
+            </li>
+            <li>
+              <a href="#">Функциональная 
+                диагностика</a>
+            </li>
+            <li>
+              <a href="#">Ультразвуковое 
+                исследование (УЗИ)</a>
+            </li>
+            <li>
+              <a href="#">Лабораторная 
+                диагностика</a>
+            </li>
+            <li>
+              <a href="#">Ангиография 
+                (рентгеноконтрастное 
+                исследование сосудов)</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <div class="drom_menu_top">
+            <a href="#">Расписание</a>
+          </div>
+        </li>
+        <li class="drop">
+          <div class="drom_menu_top">
+            <a class="active" href="#">Врачи</a>
+            <button>
+              <svg width="8" height="5" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.11719 0.889999H7.14062C7.5625 0.889999 7.77344 1.40562 7.46875 1.71031L4.46875 4.71031C4.28125 4.89781 3.97656 4.89781 3.78906 4.71031L0.789062 1.71031C0.484375 1.40562 0.695312 0.889999 1.11719 0.889999Z" fill="#3668AB"/>
+              </svg>
+            </button>
+          </div>
+          <ul class="drop_menu">
+            <li>
+              <a href="#">Прием специалистов 
+                <svg width="8" height="4" viewBox="0 0 8 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0.726562 0H6.75C7.17188 0 7.38281 0.515625 7.07812 0.820312L4.07812 3.82031C3.89062 4.00781 3.58594 4.00781 3.39844 3.82031L0.398438 0.820312C0.09375 0.515625 0.304688 0 0.726562 0Z" fill="white"/>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#">Гастроскопия</a>
+            </li>
+            <li>
+              <a href="#">Функциональная 
+                диагностика</a>
+            </li>
+            <li>
+              <a href="#">Ультразвуковое 
+                исследование (УЗИ)</a>
+            </li>
+            <li>
+              <a href="#">Лабораторная 
+                диагностика</a>
+            </li>
+            <li>
+              <a href="#">Ангиография 
+                (рентгеноконтрастное 
+                исследование сосудов)</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <div class="drom_menu_top">
+            <a href="#">Контакты</a>
+          </div>
+        </li>
+        <li>
+          <div class="drom_menu_top">
+            <a href="#">Новости</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <!-- MODAL  -->
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js" integrity="sha512-GDey37RZAxFkpFeJorEUwNoIbkTwsyC736KNSYucu1WJWFK9qTdzYub8ATxktr6Dwke7nbFaioypzbDOQykoRg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/main.js"></script>
+
+  </body>
+</html>
