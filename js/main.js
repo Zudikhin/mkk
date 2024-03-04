@@ -138,6 +138,46 @@ $(document).ready(function() {
     // FRONT_NEWS 
 
 
+    // CONTENT 
+    if ($(window).width() < 768) {
+      $('.content_block_slider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: false,
+        autoplay: false,
+        infinite: true,
+        cssEase: 'linear',
+        fade: true,
+        arrows: true,
+        prevArrow: $('.content_block_arrows_prev'),
+        nextArrow: $('.content_block_arrows_next')
+      });
+    }
+    // CONTENT 
+
+    $('.contacts_main_slider_wrap').slick({
+      slidesToShow: 2,
+      slidesToScroll: 1,
+      dots: false,
+      autoplay: false,
+      infinite: true,
+      cssEase: 'linear',
+      fade: false,
+      arrows: true,
+      prevArrow: $('.contacts_main_slider_arrows_prev'),
+      nextArrow: $('.contacts_main_slider_arrows_next'),
+      responsive: [
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+        ]
+    });
+
+
     $(document).click(function(event) { 
       var $target = $(event.target);
       if(!$target.closest('.header_nav_search').length && $('.header_nav_search').is(":visible")) {
