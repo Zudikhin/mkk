@@ -11,19 +11,19 @@ $(document).ready(function() {
     });
     
     $(".header_mob_top_search_glass").click(function() {
-      $(".header_mob_top_search").addClass("active");
+      $(".header_mob").addClass("search");
     });
 
     $(".header_mob_top_search_close").click(function() {
-      $(".header_mob_top_search").removeClass("active");
+      $(".header_mob").removeClass("search");
     });
 
     $(".header_nav_search_glass").click(function() {
-      $(".header_nav_search").addClass("active");
+      $(".header_nav").addClass("search");
     });
 
     $(".header_nav_search_close").click(function() {
-      $(".header_nav_search").removeClass("active");
+      $(".header_nav").removeClass("search");
     });
 
     $(".drom_menu_top button").click(function() {
@@ -153,8 +153,30 @@ $(document).ready(function() {
         nextArrow: $('.content_block_arrows_next')
       });
     }
+
+    $(".content_block_drop_wrap_head").click(function() {
+      $(this).toggleClass("active");
+      $(this).siblings().slideToggle();
+    });
+
+    $(".content_block_tabs_item_head").click(function() {
+      $(this).toggleClass("active");
+      $(this).siblings().slideToggle();
+    });
+
+    $(".content_block_reception_item_head").click(function() {
+      $(this).toggleClass("active");
+      $(this).siblings().slideToggle();
+    });
+
+    $(".content_block_methods_item_head_drop").click(function() {
+      $(this).parent().toggleClass("active");
+      $(this).parent().siblings().slideToggle();
+    });
+
     // CONTENT 
 
+    // CONTACTS 
     $('.contacts_main_slider_wrap').slick({
       slidesToShow: 2,
       slidesToScroll: 1,
@@ -176,7 +198,51 @@ $(document).ready(function() {
           }
         ]
     });
+    // CONTACTS 
 
+    // TIMETABLE 
+
+    $('.timetable_calendar_mob_item_for').each( function() {
+      $(this).slick({
+        dots: false,
+        infinite: true,
+        fade: true,
+        arrows: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        asNavFor: $(this).parents('.timetable_calendar_mob_item').find('.timetable_calendar_mob_item_nav_slider')
+      });
+
+      $(this).parent().find(".timetable_calendar_mob_item_nav_slider").slick({
+        slidesToShow: 1,
+        dots: false,
+        fade: true,
+        slidesToScroll: 1,
+        infinite: true,
+        prevArrow: $(this).parent().find(".timetable_calendar_mob_item_nav_prev"),
+        nextArrow: $(this).parent().find(".timetable_calendar_mob_item_nav_next"),
+        asNavFor: $(this).parents('.timetable_calendar_mob_item').find('.timetable_calendar_mob_item_for')
+      });
+
+    });
+
+    $(".timetable_directions_block_drop").on('change', 'select', function() {
+      var sortBy = $("#choiceTime").val();
+      if ($(window).width() < 768) {
+        $(".timetable_calendar_mob_item").removeClass("active");
+        $(".timetable_calendar_mob").find(`[data-target='${sortBy}']`).addClass("active");
+        $('.timetable_calendar_mob_item_nav_slider').slick('reinit');
+        $('.timetable_calendar_mob_item_for').slick('reinit');
+      } else {
+        $(".timetable_calendar_desk table").removeClass("active");
+        $(".timetable_calendar_desk").find(`[data-target='${sortBy}']`).addClass("active");
+      }
+      
+    });
+    
+    // TIMETABLE 
+
+    $('input[type="tel"]').inputmask("+7(999)999-99-99");
 
     $(document).click(function(event) { 
       var $target = $(event.target);

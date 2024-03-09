@@ -1,0 +1,3850 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <meta name="author" content="Yuriy Zudikhin https://t.me/Zudihin"/>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.7.14/css/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/style.css" />
+    
+  </head>
+
+  <body>
+
+    <!-- HEADER  -->
+    <header class="header">
+      <div class="header_mob">
+        <div class="container header_mob_top">
+          <button class="header_mob_top_burger">
+            <img src="img/header/burger.svg" alt="">
+          </button>
+          <a href="#" class="header_mob_top_logo">
+            <img src="img/header/logo.svg" alt="">
+          </a>
+          <div class="header_mob_top_form">
+            <form action="">
+              <input type="text" placeholder="Поиск...">
+              <button type="submit">
+                <img src="img/header/search.svg" alt="">
+              </button>
+            </form>
+          </div>
+          <div class="header_mob_top_search">
+            <button class="header_mob_top_search_glass">
+              <img src="img/header/search.svg" alt="">
+            </button>
+            <button class="header_mob_top_search_close">
+              <img src="img/header/close_blue.svg" alt="">
+            </button>
+          </div>
+        </div>
+        <div class="container header_mob_wrap">
+          <div class="header_mob_wrap_info">
+            <div class="header_mob_wrap_info_item">
+              <div class="header_mob_wrap_info_item_top">
+                <img src="img/header/plus.svg" alt="">
+                <p>Работаем ежедневно</p>
+              </div>
+              <span>7:00 до 22:00</span>
+            </div>
+            <div class="header_mob_wrap_info_item">
+              <div class="header_mob_wrap_info_item_top">
+                <img src="img/header/tel.svg" alt="">
+                <p>Предварительная запись</p>
+              </div>
+              <a href="tel:+79852275227">+7-985-227-5-227</a>
+            </div>
+          </div>
+          <button data-bs-toggle="modal" data-bs-target="#appointment">Записаться на прием</button>
+        </div>
+      </div>
+      <div class="header_nav">
+        <div class="container">
+          <ul>
+            <li class="drop">
+              <a class="active" href="#">Главная
+                <svg width="8" height="5" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.11719 0.889999H7.14062C7.5625 0.889999 7.77344 1.40562 7.46875 1.71031L4.46875 4.71031C4.28125 4.89781 3.97656 4.89781 3.78906 4.71031L0.789062 1.71031C0.484375 1.40562 0.695312 0.889999 1.11719 0.889999Z" fill="#3668AB"/>
+                </svg>
+              </a>
+              <ul class="drop_menu">
+                <li>
+                  <a href="#">Menu 1 
+                    <svg width="8" height="4" viewBox="0 0 8 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0.726562 0H6.75C7.17188 0 7.38281 0.515625 7.07812 0.820312L4.07812 3.82031C3.89062 4.00781 3.58594 4.00781 3.39844 3.82031L0.398438 0.820312C0.09375 0.515625 0.304688 0 0.726562 0Z" fill="white"/>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">Menu 1</a>
+                </li>
+                <li>
+                  <a href="#">Menu 2</a>
+                </li>
+              </ul>
+            </li>
+            <li class="drop">
+              <a href="#">Услуги
+                <svg width="8" height="5" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.11719 0.889999H7.14062C7.5625 0.889999 7.77344 1.40562 7.46875 1.71031L4.46875 4.71031C4.28125 4.89781 3.97656 4.89781 3.78906 4.71031L0.789062 1.71031C0.484375 1.40562 0.695312 0.889999 1.11719 0.889999Z" fill="#3668AB"/>
+                </svg>
+              </a>
+              <ul class="drop_menu">
+                <li>
+                  <a href="#">Прием специалистов 
+                    <svg width="8" height="4" viewBox="0 0 8 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0.726562 0H6.75C7.17188 0 7.38281 0.515625 7.07812 0.820312L4.07812 3.82031C3.89062 4.00781 3.58594 4.00781 3.39844 3.82031L0.398438 0.820312C0.09375 0.515625 0.304688 0 0.726562 0Z" fill="white"/>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">Гастроскопия</a>
+                </li>
+                <li>
+                  <a href="#">Функциональная 
+                    диагностика</a>
+                </li>
+                <li>
+                  <a href="#">Ультразвуковое 
+                    исследование (УЗИ)</a>
+                </li>
+                <li>
+                  <a href="#">Лабораторная 
+                    диагностика</a>
+                </li>
+                <li>
+                  <a href="#">Ангиография 
+                    (рентгеноконтрастное 
+                    исследование сосудов)</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Расписание</a>
+            </li>
+            <li class="drop">
+              <a href="#">Врачи
+                <svg width="8" height="5" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.11719 0.889999H7.14062C7.5625 0.889999 7.77344 1.40562 7.46875 1.71031L4.46875 4.71031C4.28125 4.89781 3.97656 4.89781 3.78906 4.71031L0.789062 1.71031C0.484375 1.40562 0.695312 0.889999 1.11719 0.889999Z" fill="#3668AB"/>
+                </svg>
+              </a>
+              <ul class="drop_menu">
+                <li>
+                  <a href="#">Прием специалистов 
+                    <svg width="8" height="4" viewBox="0 0 8 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0.726562 0H6.75C7.17188 0 7.38281 0.515625 7.07812 0.820312L4.07812 3.82031C3.89062 4.00781 3.58594 4.00781 3.39844 3.82031L0.398438 0.820312C0.09375 0.515625 0.304688 0 0.726562 0Z" fill="white"/>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">Гастроскопия</a>
+                </li>
+                <li>
+                  <a href="#">Функциональная 
+                    диагностика</a>
+                </li>
+                <li>
+                  <a href="#">Ультразвуковое 
+                    исследование (УЗИ)</a>
+                </li>
+                <li>
+                  <a href="#">Лабораторная 
+                    диагностика</a>
+                </li>
+                <li>
+                  <a href="#">Ангиография 
+                    (рентгеноконтрастное 
+                    исследование сосудов)</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Контакты</a>
+            </li>
+            <li>
+              <a href="#">Новости</a>
+            </li>
+          </ul>
+          <div class="header_nav_form">
+            <form action="">
+              <input type="text" placeholder="Поиск">
+              <button type="submit">
+                <img src="img/header/search.svg" alt="">
+              </button>
+            </form>
+          </div>
+          <div class="header_nav_search">
+            <button class="header_nav_search_glass">
+              <img src="img/header/search.svg" alt="">
+            </button>
+            <button class="header_nav_search_close">
+              <img src="img/header/close_blue.svg" alt="">
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="header_wrap">
+        <div class="container">
+          <a href="#" class="header_wrap_logo">
+            <img src="img/header/logo.svg" alt="">
+          </a>
+          <div class="header_wrap_item">
+            <img src="img/header/plus.svg" alt="">
+            <div class="header_wrap_item_text">
+              <p>Работаем ежедневно</p>
+              <span>7:00 до 22:00</span>
+            </div>
+          </div>
+          <div class="header_wrap_item">
+            <img src="img/header/tel.svg" alt="">
+            <div class="header_wrap_item_text">
+              <p>Предварительная запись</p>
+              <a href="tel:+79852275227">+7-985-227-5-227</a>
+            </div>
+          </div>
+          <button data-bs-toggle="modal" data-bs-target="#appointment">Записаться на прием</button>
+        </div>
+      </div>
+    </header>
+    <!-- HEADER  -->
+
+    <!-- DEFAULT  -->
+    <section class="default" style="background: url(img/default/back_4.jpeg); background-size: cover; background-position: 50%;">
+      <div class="container">
+        <div class="default_block">
+          <h1>Расписание приема врачей</h1>
+          <div class="breadcrumbs">
+            <a href="#">Главная</a>
+            <span> / </span>
+            <span>Расписание</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- DEFAULT  -->
+
+    <!-- TIMETABLE -->
+    <section class="timetable_main">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-6">
+            <div class="timetable_main_text">
+              <h2>Расписание приема</h2>
+              <p>Наши врачи – это опытные профессионалы и лидеры в своей области, имеющие за плечами многолетний опыт работы в различных направлениях медицины. <br>
+                Мы не просто лечим наших пациентов, но и заботимся окружая их вниманием и поддержкой.</p>
+              <button class="btn_default" data-bs-toggle="modal" data-bs-target="#signup">Записаться на прием</button>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6">
+            <div class="timetable_main_img">
+              <img src="img/timetable/1.webp" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="timetable_directions">
+      <div class="container">
+        <div class="timetable_directions_block">
+          <h2>ВЫБЕРИТЕ НАПРАВЛЕНИЕ И ВРЕМЯ ДЛЯ ПОСЕЩЕНИЯ</h2>
+          <div class="timetable_directions_block_drop">
+            <select name="" id="choiceTime">
+              <option value="cardiologist">Прием кардиолога</option>
+              <option value="neurologist">Прием невролога</option>
+              <option value="therapist">Прием терапевта</option>
+              <option value="nephrologist">Прием нефролога</option>
+              <option value="endocrinologist">Прием эндокринолога</option>
+              <option value="gastroenterologist">Прием гастроэнтеролога</option>
+              <option value="ray">Прием рентген-эндоваскулярного специалиста</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="timetable_calendar">
+      <div class="container">
+        <div class="timetable_calendar_mob">
+          <div data-target="cardiologist" class="timetable_calendar_mob_item active">
+            <div class="timetable_calendar_mob_item_nav">
+              <div class="timetable_calendar_mob_item_nav_prev">
+                <img src="img/interests/prev.svg" alt="">
+              </div>
+              <div class="timetable_calendar_mob_item_nav_slider">
+                <div class="timetable_calendar_mob_item_nav_slider_item">
+                  <p>понедельник</p>
+                </div>
+                <div class="timetable_calendar_mob_item_nav_slider_item">
+                  <p>вторник</p>
+                </div>
+                <div class="timetable_calendar_mob_item_nav_slider_item">
+                  <p>среда</p>
+                </div>
+                <div class="timetable_calendar_mob_item_nav_slider_item">
+                  <p>четверг</p>
+                </div>
+                <div class="timetable_calendar_mob_item_nav_slider_item">
+                  <p>пятница</p>
+                </div>
+                <div class="timetable_calendar_mob_item_nav_slider_item">
+                  <p>суббота</p>
+                </div>
+                <div class="timetable_calendar_mob_item_nav_slider_item">
+                  <p>воскресенье</p>
+                </div>
+              </div>
+              <div class="timetable_calendar_mob_item_nav_next">
+                <img src="img/interests/next.svg" alt="">
+              </div>
+            </div>
+            <div class="timetable_calendar_mob_item_for">
+              <div class="timetable_calendar_mob_item_for_item">
+                <table>
+                  <tr>
+                    <td>07:00</td>
+                    <td>09:00</td>
+                    <td>
+                      <div class="time">
+                        <span>09:15</span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>11:00</td>
+                    <td>11:30</td>
+                    <td>13:00</td>
+                  </tr>
+                  <tr>
+                    <td>15:00</td>
+                    <td>17:00</td>
+                    <td>
+                      <div class="time">
+                        <span>17:45</span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>18:00</td>
+                    <td>18:15</td>
+                    <td>18:30</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="timetable_calendar_mob_item_for_item">
+                <table>
+                  <tr>
+                    <td>
+                      <div class="time">
+                        <span>07:00</span>
+                      </div>
+                    </td>
+                    <td>09:00</td>
+                    <td>09:15</td>
+                  </tr>
+                  <tr>
+                    <td>11:00</td>
+                    <td>11:30</td>
+                    <td>13:00</td>
+                  </tr>
+                  <tr>
+                    <td>15:00</td>
+                    <td>17:00</td>
+                    <td>
+                      <div class="time">
+                        <span>17:45</span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>18:00</td>
+                    <td>18:15</td>
+                    <td>18:30</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="timetable_calendar_mob_item_for_item">
+                <table>
+                  <tr>
+                    <td>07:00</td>
+                    <td>09:00</td>
+                    <td>
+                      <div class="time">
+                        <span>09:15</span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>11:00</td>
+                    <td>11:30</td>
+                    <td>13:00</td>
+                  </tr>
+                  <tr>
+                    <td>15:00</td>
+                    <td>17:00</td>
+                    <td>
+                      <div class="time">
+                        <span>17:45</span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>18:00</td>
+                    <td>18:15</td>
+                    <td>18:30</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="timetable_calendar_mob_item_for_item">
+                <table>
+                  <tr>
+                    <td>
+                      <div class="time">
+                        <span>07:00</span>
+                      </div>
+                    </td>
+                    <td>09:00</td>
+                    <td>09:15</td>
+                  </tr>
+                  <tr>
+                    <td>11:00</td>
+                    <td>11:30</td>
+                    <td>13:00</td>
+                  </tr>
+                  <tr>
+                    <td>15:00</td>
+                    <td>17:00</td>
+                    <td>
+                      <div class="time">
+                        <span>17:45</span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>18:00</td>
+                    <td>18:15</td>
+                    <td>18:30</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="timetable_calendar_mob_item_for_item">
+                <table>
+                  <tr>
+                    <td>07:00</td>
+                    <td>09:00</td>
+                    <td>
+                      <div class="time">
+                        <span>09:15</span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>11:00</td>
+                    <td>11:30</td>
+                    <td>13:00</td>
+                  </tr>
+                  <tr>
+                    <td>15:00</td>
+                    <td>17:00</td>
+                    <td>
+                      <div class="time">
+                        <span>17:45</span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>18:00</td>
+                    <td>18:15</td>
+                    <td>18:30</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="timetable_calendar_mob_item_for_item">
+                <table>
+                  <tr>
+                    <td>
+                      <div class="time">
+                        <span>07:00</span>
+                      </div>
+                    </td>
+                    <td>09:00</td>
+                    <td>09:15</td>
+                  </tr>
+                  <tr>
+                    <td>11:00</td>
+                    <td>11:30</td>
+                    <td>13:00</td>
+                  </tr>
+                  <tr>
+                    <td>15:00</td>
+                    <td>17:00</td>
+                    <td>
+                      <div class="time">
+                        <span>17:45</span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>18:00</td>
+                    <td>18:15</td>
+                    <td>18:30</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="timetable_calendar_mob_item_for_item">
+                <table>
+                  <tr>
+                    <td>07:00</td>
+                    <td>09:00</td>
+                    <td>
+                      <div class="time">
+                        <span>09:15</span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>11:00</td>
+                    <td>11:30</td>
+                    <td>13:00</td>
+                  </tr>
+                  <tr>
+                    <td>15:00</td>
+                    <td>17:00</td>
+                    <td>
+                      <div class="time">
+                        <span>17:45</span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>18:00</td>
+                    <td>18:15</td>
+                    <td>18:30</td>
+                  </tr>
+                </table>
+              </div>              
+            </div>
+          </div>
+          <div data-target="neurologist" class="timetable_calendar_mob_item">
+            <div class="timetable_calendar_mob_item_nav">
+              <div class="timetable_calendar_mob_item_nav_prev">
+                <img src="img/interests/prev.svg" alt="">
+              </div>
+              <div class="timetable_calendar_mob_item_nav_slider">
+                <div class="timetable_calendar_mob_item_nav_slider_item">
+                  <p>понедельник</p>
+                </div>
+                <div class="timetable_calendar_mob_item_nav_slider_item">
+                  <p>вторник</p>
+                </div>
+                <div class="timetable_calendar_mob_item_nav_slider_item">
+                  <p>среда</p>
+                </div>
+                <div class="timetable_calendar_mob_item_nav_slider_item">
+                  <p>четверг</p>
+                </div>
+                <div class="timetable_calendar_mob_item_nav_slider_item">
+                  <p>пятница</p>
+                </div>
+                <div class="timetable_calendar_mob_item_nav_slider_item">
+                  <p>суббота</p>
+                </div>
+                <div class="timetable_calendar_mob_item_nav_slider_item">
+                  <p>воскресенье</p>
+                </div>
+              </div>
+              <div class="timetable_calendar_mob_item_nav_next">
+                <img src="img/interests/next.svg" alt="">
+              </div>
+            </div>
+            <div class="timetable_calendar_mob_item_for">
+              <div class="timetable_calendar_mob_item_for_item">
+                <table>
+                  <tr>
+                    <td>07:00</td>
+                    <td>09:00</td>
+                    <td>
+                      <div class="time">
+                        <span>09:15</span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>11:00</td>
+                    <td>11:30</td>
+                    <td>13:00</td>
+                  </tr>
+                  <tr>
+                    <td>15:00</td>
+                    <td>17:00</td>
+                    <td>
+                      <div class="time">
+                        <span>17:45</span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>18:00</td>
+                    <td>18:15</td>
+                    <td>18:30</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="timetable_calendar_mob_item_for_item">
+                <table>
+                  <tr>
+                    <td>
+                      <div class="time">
+                        <span>07:00</span>
+                      </div>
+                    </td>
+                    <td>09:00</td>
+                    <td>09:15</td>
+                  </tr>
+                  <tr>
+                    <td>11:00</td>
+                    <td>11:30</td>
+                    <td>13:00</td>
+                  </tr>
+                  <tr>
+                    <td>15:00</td>
+                    <td>17:00</td>
+                    <td>
+                      <div class="time">
+                        <span>17:45</span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>18:00</td>
+                    <td>18:15</td>
+                    <td>18:30</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="timetable_calendar_mob_item_for_item">
+                <table>
+                  <tr>
+                    <td>07:00</td>
+                    <td>09:00</td>
+                    <td>
+                      <div class="time">
+                        <span>09:15</span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>11:00</td>
+                    <td>11:30</td>
+                    <td>13:00</td>
+                  </tr>
+                  <tr>
+                    <td>15:00</td>
+                    <td>17:00</td>
+                    <td>
+                      <div class="time">
+                        <span>17:45</span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>18:00</td>
+                    <td>18:15</td>
+                    <td>18:30</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="timetable_calendar_mob_item_for_item">
+                <table>
+                  <tr>
+                    <td>
+                      <div class="time">
+                        <span>07:00</span>
+                      </div>
+                    </td>
+                    <td>09:00</td>
+                    <td>09:15</td>
+                  </tr>
+                  <tr>
+                    <td>11:00</td>
+                    <td>11:30</td>
+                    <td>13:00</td>
+                  </tr>
+                  <tr>
+                    <td>15:00</td>
+                    <td>17:00</td>
+                    <td>
+                      <div class="time">
+                        <span>17:45</span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>18:00</td>
+                    <td>18:15</td>
+                    <td>18:30</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="timetable_calendar_mob_item_for_item">
+                <table>
+                  <tr>
+                    <td>07:00</td>
+                    <td>09:00</td>
+                    <td>
+                      <div class="time">
+                        <span>09:15</span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>11:00</td>
+                    <td>11:30</td>
+                    <td>13:00</td>
+                  </tr>
+                  <tr>
+                    <td>15:00</td>
+                    <td>17:00</td>
+                    <td>
+                      <div class="time">
+                        <span>17:45</span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>18:00</td>
+                    <td>18:15</td>
+                    <td>18:30</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="timetable_calendar_mob_item_for_item">
+                <table>
+                  <tr>
+                    <td>
+                      <div class="time">
+                        <span>07:00</span>
+                      </div>
+                    </td>
+                    <td>09:00</td>
+                    <td>09:15</td>
+                  </tr>
+                  <tr>
+                    <td>11:00</td>
+                    <td>11:30</td>
+                    <td>13:00</td>
+                  </tr>
+                  <tr>
+                    <td>15:00</td>
+                    <td>17:00</td>
+                    <td>
+                      <div class="time">
+                        <span>17:45</span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>18:00</td>
+                    <td>18:15</td>
+                    <td>18:30</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="timetable_calendar_mob_item_for_item">
+                <table>
+                  <tr>
+                    <td>07:00</td>
+                    <td>09:00</td>
+                    <td>
+                      <div class="time">
+                        <span>09:15</span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>11:00</td>
+                    <td>11:30</td>
+                    <td>13:00</td>
+                  </tr>
+                  <tr>
+                    <td>15:00</td>
+                    <td>17:00</td>
+                    <td>
+                      <div class="time">
+                        <span>17:45</span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>18:00</td>
+                    <td>18:15</td>
+                    <td>18:30</td>
+                  </tr>
+                </table>
+              </div>              
+            </div>
+          </div>
+          <div data-target="therapist" class="timetable_calendar_mob_item">
+            <div class="timetable_calendar_mob_item_nav">
+              <div class="timetable_calendar_mob_item_nav_prev">
+                <img src="img/interests/prev.svg" alt="">
+              </div>
+              <div class="timetable_calendar_mob_item_nav_slider">
+                <div class="timetable_calendar_mob_item_nav_slider_item">
+                  <p>понедельник</p>
+                </div>
+                <div class="timetable_calendar_mob_item_nav_slider_item">
+                  <p>вторник</p>
+                </div>
+                <div class="timetable_calendar_mob_item_nav_slider_item">
+                  <p>среда</p>
+                </div>
+                <div class="timetable_calendar_mob_item_nav_slider_item">
+                  <p>четверг</p>
+                </div>
+                <div class="timetable_calendar_mob_item_nav_slider_item">
+                  <p>пятница</p>
+                </div>
+                <div class="timetable_calendar_mob_item_nav_slider_item">
+                  <p>суббота</p>
+                </div>
+                <div class="timetable_calendar_mob_item_nav_slider_item">
+                  <p>воскресенье</p>
+                </div>
+              </div>
+              <div class="timetable_calendar_mob_item_nav_next">
+                <img src="img/interests/next.svg" alt="">
+              </div>
+            </div>
+            <div class="timetable_calendar_mob_item_for">
+              <div class="timetable_calendar_mob_item_for_item">
+                <table>
+                  <tr>
+                    <td>07:00</td>
+                    <td>09:00</td>
+                    <td>
+                      <div class="time">
+                        <span>09:15</span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>11:00</td>
+                    <td>11:30</td>
+                    <td>13:00</td>
+                  </tr>
+                  <tr>
+                    <td>15:00</td>
+                    <td>17:00</td>
+                    <td>
+                      <div class="time">
+                        <span>17:45</span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>18:00</td>
+                    <td>18:15</td>
+                    <td>18:30</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="timetable_calendar_mob_item_for_item">
+                <table>
+                  <tr>
+                    <td>
+                      <div class="time">
+                        <span>07:00</span>
+                      </div>
+                    </td>
+                    <td>09:00</td>
+                    <td>09:15</td>
+                  </tr>
+                  <tr>
+                    <td>11:00</td>
+                    <td>11:30</td>
+                    <td>13:00</td>
+                  </tr>
+                  <tr>
+                    <td>15:00</td>
+                    <td>17:00</td>
+                    <td>
+                      <div class="time">
+                        <span>17:45</span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>18:00</td>
+                    <td>18:15</td>
+                    <td>18:30</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="timetable_calendar_mob_item_for_item">
+                <table>
+                  <tr>
+                    <td>07:00</td>
+                    <td>09:00</td>
+                    <td>
+                      <div class="time">
+                        <span>09:15</span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>11:00</td>
+                    <td>11:30</td>
+                    <td>13:00</td>
+                  </tr>
+                  <tr>
+                    <td>15:00</td>
+                    <td>17:00</td>
+                    <td>
+                      <div class="time">
+                        <span>17:45</span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>18:00</td>
+                    <td>18:15</td>
+                    <td>18:30</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="timetable_calendar_mob_item_for_item">
+                <table>
+                  <tr>
+                    <td>
+                      <div class="time">
+                        <span>07:00</span>
+                      </div>
+                    </td>
+                    <td>09:00</td>
+                    <td>09:15</td>
+                  </tr>
+                  <tr>
+                    <td>11:00</td>
+                    <td>11:30</td>
+                    <td>13:00</td>
+                  </tr>
+                  <tr>
+                    <td>15:00</td>
+                    <td>17:00</td>
+                    <td>
+                      <div class="time">
+                        <span>17:45</span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>18:00</td>
+                    <td>18:15</td>
+                    <td>18:30</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="timetable_calendar_mob_item_for_item">
+                <table>
+                  <tr>
+                    <td>07:00</td>
+                    <td>09:00</td>
+                    <td>
+                      <div class="time">
+                        <span>09:15</span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>11:00</td>
+                    <td>11:30</td>
+                    <td>13:00</td>
+                  </tr>
+                  <tr>
+                    <td>15:00</td>
+                    <td>17:00</td>
+                    <td>
+                      <div class="time">
+                        <span>17:45</span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>18:00</td>
+                    <td>18:15</td>
+                    <td>18:30</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="timetable_calendar_mob_item_for_item">
+                <table>
+                  <tr>
+                    <td>
+                      <div class="time">
+                        <span>07:00</span>
+                      </div>
+                    </td>
+                    <td>09:00</td>
+                    <td>09:15</td>
+                  </tr>
+                  <tr>
+                    <td>11:00</td>
+                    <td>11:30</td>
+                    <td>13:00</td>
+                  </tr>
+                  <tr>
+                    <td>15:00</td>
+                    <td>17:00</td>
+                    <td>
+                      <div class="time">
+                        <span>17:45</span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>18:00</td>
+                    <td>18:15</td>
+                    <td>18:30</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="timetable_calendar_mob_item_for_item">
+                <table>
+                  <tr>
+                    <td>07:00</td>
+                    <td>09:00</td>
+                    <td>
+                      <div class="time">
+                        <span>09:15</span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>11:00</td>
+                    <td>11:30</td>
+                    <td>13:00</td>
+                  </tr>
+                  <tr>
+                    <td>15:00</td>
+                    <td>17:00</td>
+                    <td>
+                      <div class="time">
+                        <span>17:45</span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>18:00</td>
+                    <td>18:15</td>
+                    <td>18:30</td>
+                  </tr>
+                </table>
+              </div>              
+            </div>
+          </div>
+          <div data-target="nephrologist" class="timetable_calendar_mob_item">
+            <div class="timetable_calendar_mob_item_nav">
+              <div class="timetable_calendar_mob_item_nav_prev">
+                <img src="img/interests/prev.svg" alt="">
+              </div>
+              <div class="timetable_calendar_mob_item_nav_slider">
+                <div class="timetable_calendar_mob_item_nav_slider_item">
+                  <p>понедельник</p>
+                </div>
+                <div class="timetable_calendar_mob_item_nav_slider_item">
+                  <p>вторник</p>
+                </div>
+                <div class="timetable_calendar_mob_item_nav_slider_item">
+                  <p>среда</p>
+                </div>
+                <div class="timetable_calendar_mob_item_nav_slider_item">
+                  <p>четверг</p>
+                </div>
+                <div class="timetable_calendar_mob_item_nav_slider_item">
+                  <p>пятница</p>
+                </div>
+                <div class="timetable_calendar_mob_item_nav_slider_item">
+                  <p>суббота</p>
+                </div>
+                <div class="timetable_calendar_mob_item_nav_slider_item">
+                  <p>воскресенье</p>
+                </div>
+              </div>
+              <div class="timetable_calendar_mob_item_nav_next">
+                <img src="img/interests/next.svg" alt="">
+              </div>
+            </div>
+            <div class="timetable_calendar_mob_item_for">
+              <div class="timetable_calendar_mob_item_for_item">
+                <table>
+                  <tr>
+                    <td>07:00</td>
+                    <td>09:00</td>
+                    <td>
+                      <div class="time">
+                        <span>09:15</span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>11:00</td>
+                    <td>11:30</td>
+                    <td>13:00</td>
+                  </tr>
+                  <tr>
+                    <td>15:00</td>
+                    <td>17:00</td>
+                    <td>
+                      <div class="time">
+                        <span>17:45</span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>18:00</td>
+                    <td>18:15</td>
+                    <td>18:30</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="timetable_calendar_mob_item_for_item">
+                <table>
+                  <tr>
+                    <td>
+                      <div class="time">
+                        <span>07:00</span>
+                      </div>
+                    </td>
+                    <td>09:00</td>
+                    <td>09:15</td>
+                  </tr>
+                  <tr>
+                    <td>11:00</td>
+                    <td>11:30</td>
+                    <td>13:00</td>
+                  </tr>
+                  <tr>
+                    <td>15:00</td>
+                    <td>17:00</td>
+                    <td>
+                      <div class="time">
+                        <span>17:45</span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>18:00</td>
+                    <td>18:15</td>
+                    <td>18:30</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="timetable_calendar_mob_item_for_item">
+                <table>
+                  <tr>
+                    <td>07:00</td>
+                    <td>09:00</td>
+                    <td>
+                      <div class="time">
+                        <span>09:15</span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>11:00</td>
+                    <td>11:30</td>
+                    <td>13:00</td>
+                  </tr>
+                  <tr>
+                    <td>15:00</td>
+                    <td>17:00</td>
+                    <td>
+                      <div class="time">
+                        <span>17:45</span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>18:00</td>
+                    <td>18:15</td>
+                    <td>18:30</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="timetable_calendar_mob_item_for_item">
+                <table>
+                  <tr>
+                    <td>
+                      <div class="time">
+                        <span>07:00</span>
+                      </div>
+                    </td>
+                    <td>09:00</td>
+                    <td>09:15</td>
+                  </tr>
+                  <tr>
+                    <td>11:00</td>
+                    <td>11:30</td>
+                    <td>13:00</td>
+                  </tr>
+                  <tr>
+                    <td>15:00</td>
+                    <td>17:00</td>
+                    <td>
+                      <div class="time">
+                        <span>17:45</span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>18:00</td>
+                    <td>18:15</td>
+                    <td>18:30</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="timetable_calendar_mob_item_for_item">
+                <table>
+                  <tr>
+                    <td>07:00</td>
+                    <td>09:00</td>
+                    <td>
+                      <div class="time">
+                        <span>09:15</span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>11:00</td>
+                    <td>11:30</td>
+                    <td>13:00</td>
+                  </tr>
+                  <tr>
+                    <td>15:00</td>
+                    <td>17:00</td>
+                    <td>
+                      <div class="time">
+                        <span>17:45</span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>18:00</td>
+                    <td>18:15</td>
+                    <td>18:30</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="timetable_calendar_mob_item_for_item">
+                <table>
+                  <tr>
+                    <td>
+                      <div class="time">
+                        <span>07:00</span>
+                      </div>
+                    </td>
+                    <td>09:00</td>
+                    <td>09:15</td>
+                  </tr>
+                  <tr>
+                    <td>11:00</td>
+                    <td>11:30</td>
+                    <td>13:00</td>
+                  </tr>
+                  <tr>
+                    <td>15:00</td>
+                    <td>17:00</td>
+                    <td>
+                      <div class="time">
+                        <span>17:45</span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>18:00</td>
+                    <td>18:15</td>
+                    <td>18:30</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="timetable_calendar_mob_item_for_item">
+                <table>
+                  <tr>
+                    <td>07:00</td>
+                    <td>09:00</td>
+                    <td>
+                      <div class="time">
+                        <span>09:15</span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>11:00</td>
+                    <td>11:30</td>
+                    <td>13:00</td>
+                  </tr>
+                  <tr>
+                    <td>15:00</td>
+                    <td>17:00</td>
+                    <td>
+                      <div class="time">
+                        <span>17:45</span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>18:00</td>
+                    <td>18:15</td>
+                    <td>18:30</td>
+                  </tr>
+                </table>
+              </div>              
+            </div>
+          </div>
+          <div data-target="endocrinologist" class="timetable_calendar_mob_item">
+            <div class="timetable_calendar_mob_item_nav">
+              <div class="timetable_calendar_mob_item_nav_prev">
+                <img src="img/interests/prev.svg" alt="">
+              </div>
+              <div class="timetable_calendar_mob_item_nav_slider">
+                <div class="timetable_calendar_mob_item_nav_slider_item">
+                  <p>понедельник</p>
+                </div>
+                <div class="timetable_calendar_mob_item_nav_slider_item">
+                  <p>вторник</p>
+                </div>
+                <div class="timetable_calendar_mob_item_nav_slider_item">
+                  <p>среда</p>
+                </div>
+                <div class="timetable_calendar_mob_item_nav_slider_item">
+                  <p>четверг</p>
+                </div>
+                <div class="timetable_calendar_mob_item_nav_slider_item">
+                  <p>пятница</p>
+                </div>
+                <div class="timetable_calendar_mob_item_nav_slider_item">
+                  <p>суббота</p>
+                </div>
+                <div class="timetable_calendar_mob_item_nav_slider_item">
+                  <p>воскресенье</p>
+                </div>
+              </div>
+              <div class="timetable_calendar_mob_item_nav_next">
+                <img src="img/interests/next.svg" alt="">
+              </div>
+            </div>
+            <div class="timetable_calendar_mob_item_for">
+              <div class="timetable_calendar_mob_item_for_item">
+                <table>
+                  <tr>
+                    <td>07:00</td>
+                    <td>09:00</td>
+                    <td>
+                      <div class="time">
+                        <span>09:15</span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>11:00</td>
+                    <td>11:30</td>
+                    <td>13:00</td>
+                  </tr>
+                  <tr>
+                    <td>15:00</td>
+                    <td>17:00</td>
+                    <td>
+                      <div class="time">
+                        <span>17:45</span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>18:00</td>
+                    <td>18:15</td>
+                    <td>18:30</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="timetable_calendar_mob_item_for_item">
+                <table>
+                  <tr>
+                    <td>
+                      <div class="time">
+                        <span>07:00</span>
+                      </div>
+                    </td>
+                    <td>09:00</td>
+                    <td>09:15</td>
+                  </tr>
+                  <tr>
+                    <td>11:00</td>
+                    <td>11:30</td>
+                    <td>13:00</td>
+                  </tr>
+                  <tr>
+                    <td>15:00</td>
+                    <td>17:00</td>
+                    <td>
+                      <div class="time">
+                        <span>17:45</span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>18:00</td>
+                    <td>18:15</td>
+                    <td>18:30</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="timetable_calendar_mob_item_for_item">
+                <table>
+                  <tr>
+                    <td>07:00</td>
+                    <td>09:00</td>
+                    <td>
+                      <div class="time">
+                        <span>09:15</span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>11:00</td>
+                    <td>11:30</td>
+                    <td>13:00</td>
+                  </tr>
+                  <tr>
+                    <td>15:00</td>
+                    <td>17:00</td>
+                    <td>
+                      <div class="time">
+                        <span>17:45</span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>18:00</td>
+                    <td>18:15</td>
+                    <td>18:30</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="timetable_calendar_mob_item_for_item">
+                <table>
+                  <tr>
+                    <td>
+                      <div class="time">
+                        <span>07:00</span>
+                      </div>
+                    </td>
+                    <td>09:00</td>
+                    <td>09:15</td>
+                  </tr>
+                  <tr>
+                    <td>11:00</td>
+                    <td>11:30</td>
+                    <td>13:00</td>
+                  </tr>
+                  <tr>
+                    <td>15:00</td>
+                    <td>17:00</td>
+                    <td>
+                      <div class="time">
+                        <span>17:45</span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>18:00</td>
+                    <td>18:15</td>
+                    <td>18:30</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="timetable_calendar_mob_item_for_item">
+                <table>
+                  <tr>
+                    <td>07:00</td>
+                    <td>09:00</td>
+                    <td>
+                      <div class="time">
+                        <span>09:15</span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>11:00</td>
+                    <td>11:30</td>
+                    <td>13:00</td>
+                  </tr>
+                  <tr>
+                    <td>15:00</td>
+                    <td>17:00</td>
+                    <td>
+                      <div class="time">
+                        <span>17:45</span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>18:00</td>
+                    <td>18:15</td>
+                    <td>18:30</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="timetable_calendar_mob_item_for_item">
+                <table>
+                  <tr>
+                    <td>
+                      <div class="time">
+                        <span>07:00</span>
+                      </div>
+                    </td>
+                    <td>09:00</td>
+                    <td>09:15</td>
+                  </tr>
+                  <tr>
+                    <td>11:00</td>
+                    <td>11:30</td>
+                    <td>13:00</td>
+                  </tr>
+                  <tr>
+                    <td>15:00</td>
+                    <td>17:00</td>
+                    <td>
+                      <div class="time">
+                        <span>17:45</span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>18:00</td>
+                    <td>18:15</td>
+                    <td>18:30</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="timetable_calendar_mob_item_for_item">
+                <table>
+                  <tr>
+                    <td>07:00</td>
+                    <td>09:00</td>
+                    <td>
+                      <div class="time">
+                        <span>09:15</span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>11:00</td>
+                    <td>11:30</td>
+                    <td>13:00</td>
+                  </tr>
+                  <tr>
+                    <td>15:00</td>
+                    <td>17:00</td>
+                    <td>
+                      <div class="time">
+                        <span>17:45</span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>18:00</td>
+                    <td>18:15</td>
+                    <td>18:30</td>
+                  </tr>
+                </table>
+              </div>              
+            </div>
+          </div>
+          <div data-target="gastroenterologist" class="timetable_calendar_mob_item">
+            <div class="timetable_calendar_mob_item_nav">
+              <div class="timetable_calendar_mob_item_nav_prev">
+                <img src="img/interests/prev.svg" alt="">
+              </div>
+              <div class="timetable_calendar_mob_item_nav_slider">
+                <div class="timetable_calendar_mob_item_nav_slider_item">
+                  <p>понедельник</p>
+                </div>
+                <div class="timetable_calendar_mob_item_nav_slider_item">
+                  <p>вторник</p>
+                </div>
+                <div class="timetable_calendar_mob_item_nav_slider_item">
+                  <p>среда</p>
+                </div>
+                <div class="timetable_calendar_mob_item_nav_slider_item">
+                  <p>четверг</p>
+                </div>
+                <div class="timetable_calendar_mob_item_nav_slider_item">
+                  <p>пятница</p>
+                </div>
+                <div class="timetable_calendar_mob_item_nav_slider_item">
+                  <p>суббота</p>
+                </div>
+                <div class="timetable_calendar_mob_item_nav_slider_item">
+                  <p>воскресенье</p>
+                </div>
+              </div>
+              <div class="timetable_calendar_mob_item_nav_next">
+                <img src="img/interests/next.svg" alt="">
+              </div>
+            </div>
+            <div class="timetable_calendar_mob_item_for">
+              <div class="timetable_calendar_mob_item_for_item">
+                <table>
+                  <tr>
+                    <td>07:00</td>
+                    <td>09:00</td>
+                    <td>
+                      <div class="time">
+                        <span>09:15</span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>11:00</td>
+                    <td>11:30</td>
+                    <td>13:00</td>
+                  </tr>
+                  <tr>
+                    <td>15:00</td>
+                    <td>17:00</td>
+                    <td>
+                      <div class="time">
+                        <span>17:45</span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>18:00</td>
+                    <td>18:15</td>
+                    <td>18:30</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="timetable_calendar_mob_item_for_item">
+                <table>
+                  <tr>
+                    <td>
+                      <div class="time">
+                        <span>07:00</span>
+                      </div>
+                    </td>
+                    <td>09:00</td>
+                    <td>09:15</td>
+                  </tr>
+                  <tr>
+                    <td>11:00</td>
+                    <td>11:30</td>
+                    <td>13:00</td>
+                  </tr>
+                  <tr>
+                    <td>15:00</td>
+                    <td>17:00</td>
+                    <td>
+                      <div class="time">
+                        <span>17:45</span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>18:00</td>
+                    <td>18:15</td>
+                    <td>18:30</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="timetable_calendar_mob_item_for_item">
+                <table>
+                  <tr>
+                    <td>07:00</td>
+                    <td>09:00</td>
+                    <td>
+                      <div class="time">
+                        <span>09:15</span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>11:00</td>
+                    <td>11:30</td>
+                    <td>13:00</td>
+                  </tr>
+                  <tr>
+                    <td>15:00</td>
+                    <td>17:00</td>
+                    <td>
+                      <div class="time">
+                        <span>17:45</span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>18:00</td>
+                    <td>18:15</td>
+                    <td>18:30</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="timetable_calendar_mob_item_for_item">
+                <table>
+                  <tr>
+                    <td>
+                      <div class="time">
+                        <span>07:00</span>
+                      </div>
+                    </td>
+                    <td>09:00</td>
+                    <td>09:15</td>
+                  </tr>
+                  <tr>
+                    <td>11:00</td>
+                    <td>11:30</td>
+                    <td>13:00</td>
+                  </tr>
+                  <tr>
+                    <td>15:00</td>
+                    <td>17:00</td>
+                    <td>
+                      <div class="time">
+                        <span>17:45</span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>18:00</td>
+                    <td>18:15</td>
+                    <td>18:30</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="timetable_calendar_mob_item_for_item">
+                <table>
+                  <tr>
+                    <td>07:00</td>
+                    <td>09:00</td>
+                    <td>
+                      <div class="time">
+                        <span>09:15</span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>11:00</td>
+                    <td>11:30</td>
+                    <td>13:00</td>
+                  </tr>
+                  <tr>
+                    <td>15:00</td>
+                    <td>17:00</td>
+                    <td>
+                      <div class="time">
+                        <span>17:45</span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>18:00</td>
+                    <td>18:15</td>
+                    <td>18:30</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="timetable_calendar_mob_item_for_item">
+                <table>
+                  <tr>
+                    <td>
+                      <div class="time">
+                        <span>07:00</span>
+                      </div>
+                    </td>
+                    <td>09:00</td>
+                    <td>09:15</td>
+                  </tr>
+                  <tr>
+                    <td>11:00</td>
+                    <td>11:30</td>
+                    <td>13:00</td>
+                  </tr>
+                  <tr>
+                    <td>15:00</td>
+                    <td>17:00</td>
+                    <td>
+                      <div class="time">
+                        <span>17:45</span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>18:00</td>
+                    <td>18:15</td>
+                    <td>18:30</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="timetable_calendar_mob_item_for_item">
+                <table>
+                  <tr>
+                    <td>07:00</td>
+                    <td>09:00</td>
+                    <td>
+                      <div class="time">
+                        <span>09:15</span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>11:00</td>
+                    <td>11:30</td>
+                    <td>13:00</td>
+                  </tr>
+                  <tr>
+                    <td>15:00</td>
+                    <td>17:00</td>
+                    <td>
+                      <div class="time">
+                        <span>17:45</span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>18:00</td>
+                    <td>18:15</td>
+                    <td>18:30</td>
+                  </tr>
+                </table>
+              </div>              
+            </div>
+          </div>
+          <div data-target="ray" class="timetable_calendar_mob_item">
+            <div class="timetable_calendar_mob_item_nav">
+              <div class="timetable_calendar_mob_item_nav_prev">
+                <img src="img/interests/prev.svg" alt="">
+              </div>
+              <div class="timetable_calendar_mob_item_nav_slider">
+                <div class="timetable_calendar_mob_item_nav_slider_item">
+                  <p>понедельник</p>
+                </div>
+                <div class="timetable_calendar_mob_item_nav_slider_item">
+                  <p>вторник</p>
+                </div>
+                <div class="timetable_calendar_mob_item_nav_slider_item">
+                  <p>среда</p>
+                </div>
+                <div class="timetable_calendar_mob_item_nav_slider_item">
+                  <p>четверг</p>
+                </div>
+                <div class="timetable_calendar_mob_item_nav_slider_item">
+                  <p>пятница</p>
+                </div>
+                <div class="timetable_calendar_mob_item_nav_slider_item">
+                  <p>суббота</p>
+                </div>
+                <div class="timetable_calendar_mob_item_nav_slider_item">
+                  <p>воскресенье</p>
+                </div>
+              </div>
+              <div class="timetable_calendar_mob_item_nav_next">
+                <img src="img/interests/next.svg" alt="">
+              </div>
+            </div>
+            <div class="timetable_calendar_mob_item_for">
+              <div class="timetable_calendar_mob_item_for_item">
+                <table>
+                  <tr>
+                    <td>07:00</td>
+                    <td>09:00</td>
+                    <td>
+                      <div class="time">
+                        <span>09:15</span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>11:00</td>
+                    <td>11:30</td>
+                    <td>13:00</td>
+                  </tr>
+                  <tr>
+                    <td>15:00</td>
+                    <td>17:00</td>
+                    <td>
+                      <div class="time">
+                        <span>17:45</span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>18:00</td>
+                    <td>18:15</td>
+                    <td>18:30</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="timetable_calendar_mob_item_for_item">
+                <table>
+                  <tr>
+                    <td>
+                      <div class="time">
+                        <span>07:00</span>
+                      </div>
+                    </td>
+                    <td>09:00</td>
+                    <td>09:15</td>
+                  </tr>
+                  <tr>
+                    <td>11:00</td>
+                    <td>11:30</td>
+                    <td>13:00</td>
+                  </tr>
+                  <tr>
+                    <td>15:00</td>
+                    <td>17:00</td>
+                    <td>
+                      <div class="time">
+                        <span>17:45</span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>18:00</td>
+                    <td>18:15</td>
+                    <td>18:30</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="timetable_calendar_mob_item_for_item">
+                <table>
+                  <tr>
+                    <td>07:00</td>
+                    <td>09:00</td>
+                    <td>
+                      <div class="time">
+                        <span>09:15</span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>11:00</td>
+                    <td>11:30</td>
+                    <td>13:00</td>
+                  </tr>
+                  <tr>
+                    <td>15:00</td>
+                    <td>17:00</td>
+                    <td>
+                      <div class="time">
+                        <span>17:45</span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>18:00</td>
+                    <td>18:15</td>
+                    <td>18:30</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="timetable_calendar_mob_item_for_item">
+                <table>
+                  <tr>
+                    <td>
+                      <div class="time">
+                        <span>07:00</span>
+                      </div>
+                    </td>
+                    <td>09:00</td>
+                    <td>09:15</td>
+                  </tr>
+                  <tr>
+                    <td>11:00</td>
+                    <td>11:30</td>
+                    <td>13:00</td>
+                  </tr>
+                  <tr>
+                    <td>15:00</td>
+                    <td>17:00</td>
+                    <td>
+                      <div class="time">
+                        <span>17:45</span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>18:00</td>
+                    <td>18:15</td>
+                    <td>18:30</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="timetable_calendar_mob_item_for_item">
+                <table>
+                  <tr>
+                    <td>07:00</td>
+                    <td>09:00</td>
+                    <td>
+                      <div class="time">
+                        <span>09:15</span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>11:00</td>
+                    <td>11:30</td>
+                    <td>13:00</td>
+                  </tr>
+                  <tr>
+                    <td>15:00</td>
+                    <td>17:00</td>
+                    <td>
+                      <div class="time">
+                        <span>17:45</span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>18:00</td>
+                    <td>18:15</td>
+                    <td>18:30</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="timetable_calendar_mob_item_for_item">
+                <table>
+                  <tr>
+                    <td>
+                      <div class="time">
+                        <span>07:00</span>
+                      </div>
+                    </td>
+                    <td>09:00</td>
+                    <td>09:15</td>
+                  </tr>
+                  <tr>
+                    <td>11:00</td>
+                    <td>11:30</td>
+                    <td>13:00</td>
+                  </tr>
+                  <tr>
+                    <td>15:00</td>
+                    <td>17:00</td>
+                    <td>
+                      <div class="time">
+                        <span>17:45</span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>18:00</td>
+                    <td>18:15</td>
+                    <td>18:30</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="timetable_calendar_mob_item_for_item">
+                <table>
+                  <tr>
+                    <td>07:00</td>
+                    <td>09:00</td>
+                    <td>
+                      <div class="time">
+                        <span>09:15</span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>11:00</td>
+                    <td>11:30</td>
+                    <td>13:00</td>
+                  </tr>
+                  <tr>
+                    <td>15:00</td>
+                    <td>17:00</td>
+                    <td>
+                      <div class="time">
+                        <span>17:45</span>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>18:00</td>
+                    <td>18:15</td>
+                    <td>18:30</td>
+                  </tr>
+                </table>
+              </div>              
+            </div>
+          </div>
+        </div>
+        <div class="timetable_calendar_desk">
+
+          <table class="active" data-target="cardiologist">
+            <thead>
+              <tr>
+                <th>
+                </th>
+                <th>
+                  понедельник
+                </th>
+                <th>
+                  вторник
+                </th>
+                <th>
+                  среда
+                </th>
+                <th>
+                  четверг
+                </th>
+                <th>
+                  пятница
+                </th>
+                <th>
+                  суббота
+                </th>
+                <th>
+                  воскресенье
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  08:00
+                </td>
+                <td rowspan="3">
+                  <div class="time">
+                    <span>Прием Кардиолога</span>
+                    <p>07:00 - 08:45</p>
+                  </div>
+                </td>
+                <td colspan="1" rowspan="2">
+                </td>
+                <td colspan="1" rowspan="2">
+                </td>
+                <td colspan="1" rowspan="1">
+                </td>
+                <td colspan="1" rowspan="1">
+                </td>
+                <td colspan="1" rowspan="2">
+                </td>
+                <td colspan="1">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  09:00
+                </td>
+                <td colspan="1" rowspan="3">
+                </td>
+                <td colspan="1" rowspan="2">
+                  <div class="time">
+                    <span>Прием Кардиолога</span>
+                    <p>07:00 - 08:45</p>
+                  </div>
+                </td>
+                <td colspan="1" rowspan="2">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  10:00
+                </td>
+                <td colspan="1" rowspan="2">
+                </td>
+                <td colspan="1" rowspan="2">
+                </td>
+                <td colspan="1" rowspan="4">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  11:00
+                </td>
+                <td colspan="1" rowspan="3">
+                </td>
+                <td colspan="1">
+                </td>
+                <td colspan="1">
+                  <div class="time">
+                    <span>Прием Кардиолога</span>
+                    <p>07:00 - 08:45</p>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  12:00
+                </td>
+                <td colspan="1" rowspan="2">
+                </td>
+                <td colspan="1" rowspan="3">
+                </td>
+                <td colspan="1" rowspan="2">
+                </td>
+                <td colspan="1">
+                </td>
+                <td colspan="1">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  13:00
+                </td>
+                <td colspan="1" rowspan="2">
+                </td>
+                <td colspan="1" rowspan="3">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  14:00
+                </td>
+                <td colspan="1" rowspan="2">
+                </td>
+                <td colspan="1" rowspan="3">
+                </td>
+                <td colspan="1" rowspan="2">
+                </td>
+                <td colspan="1" rowspan="1">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  15:00
+                </td>
+                <td colspan="1" rowspan="2">
+                </td>
+                <td colspan="1" rowspan="1">
+                </td>
+                <td colspan="1" rowspan="4">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  16:00
+                </td>
+                <td colspan="1" rowspan="3">
+                </td>
+                <td colspan="1" rowspan="3">
+                  <div class="time">
+                    <span>Прием Кардиолога</span>
+                    <p>07:00 - 08:45</p>
+                  </div>
+                </td>
+                <td colspan="1">
+                </td>
+                <td colspan="1">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  17:00
+                </td>
+                <td colspan="1">
+                </td>
+                <td colspan="1">
+                </td>
+                <td colspan="1">
+                </td>
+                <td colspan="1">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  18:00
+                </td>
+                <td colspan="1">
+                </td>
+                <td colspan="1">
+                  <div class="time">
+                    <span>Прием Кардиолога</span>
+                    <p>07:00 - 08:45</p>
+                  </div>
+                </td>
+                <td colspan="1">
+                </td>
+                <td colspan="1">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <table data-target="neurologist">
+            <thead>
+              <tr>
+                <th>
+                </th>
+                <th>
+                  понедельник
+                </th>
+                <th>
+                  вторник
+                </th>
+                <th>
+                  среда
+                </th>
+                <th>
+                  четверг
+                </th>
+                <th>
+                  пятница
+                </th>
+                <th>
+                  суббота
+                </th>
+                <th>
+                  воскресенье
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  08:00
+                </td>
+                <td rowspan="1">
+                  <div class="time">
+                    <span>Прием Кардиолога</span>
+                    <p>07:00 - 08:45</p>
+                  </div>
+                </td>
+                <td colspan="1" rowspan="2">
+                </td>
+                <td colspan="1" rowspan="2">
+                </td>
+                <td colspan="1" rowspan="1">
+                </td>
+                <td colspan="1" rowspan="1">
+                </td>
+                <td colspan="1" rowspan="2">
+                </td>
+                <td colspan="1">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  09:00
+                </td>
+                <td colspan="1" rowspan="3">
+                  <div class="time">
+                    <span>Прием Кардиолога</span>
+                    <p>07:00 - 08:45</p>
+                  </div>
+                </td>
+                <td colspan="1" rowspan="2">
+                </td>
+                <td colspan="1" rowspan="2">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  10:00
+                </td>
+                <td colspan="1" rowspan="2">
+                </td>
+                <td colspan="1" rowspan="2">
+                </td>
+                <td colspan="1" rowspan="4">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  11:00
+                </td>
+                <td colspan="1" rowspan="3">
+                </td>
+                <td colspan="1">
+                </td>
+                <td colspan="1">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  12:00
+                </td>
+                <td colspan="1" rowspan="2">
+                </td>
+                <td colspan="1" rowspan="3">
+                </td>
+                <td colspan="1" rowspan="2">
+                </td>
+                <td colspan="1">
+                </td>
+                <td colspan="1">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  13:00
+                </td>
+                <td colspan="1" rowspan="2">
+                  <div class="time">
+                    <span>Прием Кардиолога</span>
+                    <p>07:00 - 08:45</p>
+                  </div>
+                </td>
+                <td colspan="1" rowspan="3">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  14:00
+                </td>
+                <td colspan="1" rowspan="2">
+                </td>
+                <td colspan="1" rowspan="3">
+                </td>
+                <td colspan="1" rowspan="2">
+                </td>
+                <td colspan="1" rowspan="1">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  15:00
+                </td>
+                <td colspan="1" rowspan="2">
+                </td>
+                <td colspan="1" rowspan="1">
+                </td>
+                <td colspan="1" rowspan="4">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  16:00
+                </td>
+                <td colspan="1" rowspan="3">
+                  <div class="time">
+                    <span>Прием Кардиолога</span>
+                    <p>07:00 - 08:45</p>
+                  </div>
+                </td>
+                <td colspan="1" rowspan="3">
+                  <div class="time">
+                    <span>Прием Кардиолога</span>
+                    <p>07:00 - 08:45</p>
+                  </div>
+                </td>
+                <td colspan="1">
+                </td>
+                <td colspan="1">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  17:00
+                </td>
+                <td colspan="1">
+                </td>
+                <td colspan="1">
+                </td>
+                <td colspan="1">
+                </td>
+                <td colspan="1">
+                  <div class="time">
+                    <span>Прием Кардиолога</span>
+                    <p>07:00 - 08:45</p>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  18:00
+                </td>
+                <td colspan="1">
+                </td>
+                <td colspan="1">
+                  <div class="time">
+                    <span>Прием Кардиолога</span>
+                    <p>07:00 - 08:45</p>
+                  </div>
+                </td>
+                <td colspan="1">
+                </td>
+                <td colspan="1">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <table data-target="therapist">
+            <thead>
+              <tr>
+                <th>
+                </th>
+                <th>
+                  понедельник
+                </th>
+                <th>
+                  вторник
+                </th>
+                <th>
+                  среда
+                </th>
+                <th>
+                  четверг
+                </th>
+                <th>
+                  пятница
+                </th>
+                <th>
+                  суббота
+                </th>
+                <th>
+                  воскресенье
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  08:00
+                </td>
+                <td rowspan="1">
+                  <div class="time">
+                    <span>Прием Кардиолога</span>
+                    <p>07:00 - 08:45</p>
+                  </div>
+                </td>
+                <td colspan="1" rowspan="2">
+                </td>
+                <td colspan="1" rowspan="2">
+                </td>
+                <td colspan="1" rowspan="1">
+                </td>
+                <td colspan="1" rowspan="1">
+                </td>
+                <td colspan="1" rowspan="2">
+                </td>
+                <td colspan="1">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  09:00
+                </td>
+                <td colspan="1" rowspan="3">
+                  <div class="time">
+                    <span>Прием Кардиолога</span>
+                    <p>07:00 - 08:45</p>
+                  </div>
+                </td>
+                <td colspan="1" rowspan="2">
+                </td>
+                <td colspan="1" rowspan="2">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  10:00
+                </td>
+                <td colspan="1" rowspan="2">
+                </td>
+                <td colspan="1" rowspan="2">
+                </td>
+                <td colspan="1" rowspan="4">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  11:00
+                </td>
+                <td colspan="1" rowspan="3">
+                </td>
+                <td colspan="1">
+                </td>
+                <td colspan="1">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  12:00
+                </td>
+                <td colspan="1" rowspan="2">
+                </td>
+                <td colspan="1" rowspan="3">
+                </td>
+                <td colspan="1" rowspan="2">
+                </td>
+                <td colspan="1">
+                </td>
+                <td colspan="1">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  13:00
+                </td>
+                <td colspan="1" rowspan="2">
+                  <div class="time">
+                    <span>Прием Кардиолога</span>
+                    <p>07:00 - 08:45</p>
+                  </div>
+                </td>
+                <td colspan="1" rowspan="3">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  14:00
+                </td>
+                <td colspan="1" rowspan="2">
+                </td>
+                <td colspan="1" rowspan="3">
+                </td>
+                <td colspan="1" rowspan="2">
+                </td>
+                <td colspan="1" rowspan="1">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  15:00
+                </td>
+                <td colspan="1" rowspan="2">
+                </td>
+                <td colspan="1" rowspan="1">
+                </td>
+                <td colspan="1" rowspan="4">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  16:00
+                </td>
+                <td colspan="1" rowspan="3">
+                  <div class="time">
+                    <span>Прием Кардиолога</span>
+                    <p>07:00 - 08:45</p>
+                  </div>
+                </td>
+                <td colspan="1" rowspan="3">
+                  <div class="time">
+                    <span>Прием Кардиолога</span>
+                    <p>07:00 - 08:45</p>
+                  </div>
+                </td>
+                <td colspan="1">
+                </td>
+                <td colspan="1">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  17:00
+                </td>
+                <td colspan="1">
+                </td>
+                <td colspan="1">
+                </td>
+                <td colspan="1">
+                </td>
+                <td colspan="1">
+                  <div class="time">
+                    <span>Прием Кардиолога</span>
+                    <p>07:00 - 08:45</p>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  18:00
+                </td>
+                <td colspan="1">
+                </td>
+                <td colspan="1">
+                  <div class="time">
+                    <span>Прием Кардиолога</span>
+                    <p>07:00 - 08:45</p>
+                  </div>
+                </td>
+                <td colspan="1">
+                </td>
+                <td colspan="1">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <table data-target="nephrologist">
+            <thead>
+              <tr>
+                <th>
+                </th>
+                <th>
+                  понедельник
+                </th>
+                <th>
+                  вторник
+                </th>
+                <th>
+                  среда
+                </th>
+                <th>
+                  четверг
+                </th>
+                <th>
+                  пятница
+                </th>
+                <th>
+                  суббота
+                </th>
+                <th>
+                  воскресенье
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  08:00
+                </td>
+                <td rowspan="1">
+                  <div class="time">
+                    <span>Прием Кардиолога</span>
+                    <p>07:00 - 08:45</p>
+                  </div>
+                </td>
+                <td colspan="1" rowspan="2">
+                </td>
+                <td colspan="1" rowspan="2">
+                </td>
+                <td colspan="1" rowspan="1">
+                </td>
+                <td colspan="1" rowspan="1">
+                </td>
+                <td colspan="1" rowspan="2">
+                </td>
+                <td colspan="1">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  09:00
+                </td>
+                <td colspan="1" rowspan="3">
+                  <div class="time">
+                    <span>Прием Кардиолога</span>
+                    <p>07:00 - 08:45</p>
+                  </div>
+                </td>
+                <td colspan="1" rowspan="2">
+                </td>
+                <td colspan="1" rowspan="2">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  10:00
+                </td>
+                <td colspan="1" rowspan="2">
+                </td>
+                <td colspan="1" rowspan="2">
+                </td>
+                <td colspan="1" rowspan="4">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  11:00
+                </td>
+                <td colspan="1" rowspan="3">
+                </td>
+                <td colspan="1">
+                </td>
+                <td colspan="1">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  12:00
+                </td>
+                <td colspan="1" rowspan="2">
+                </td>
+                <td colspan="1" rowspan="3">
+                </td>
+                <td colspan="1" rowspan="2">
+                </td>
+                <td colspan="1">
+                </td>
+                <td colspan="1">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  13:00
+                </td>
+                <td colspan="1" rowspan="2">
+                  <div class="time">
+                    <span>Прием Кардиолога</span>
+                    <p>07:00 - 08:45</p>
+                  </div>
+                </td>
+                <td colspan="1" rowspan="3">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  14:00
+                </td>
+                <td colspan="1" rowspan="2">
+                </td>
+                <td colspan="1" rowspan="3">
+                </td>
+                <td colspan="1" rowspan="2">
+                </td>
+                <td colspan="1" rowspan="1">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  15:00
+                </td>
+                <td colspan="1" rowspan="2">
+                </td>
+                <td colspan="1" rowspan="1">
+                </td>
+                <td colspan="1" rowspan="4">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  16:00
+                </td>
+                <td colspan="1" rowspan="3">
+                  <div class="time">
+                    <span>Прием Кардиолога</span>
+                    <p>07:00 - 08:45</p>
+                  </div>
+                </td>
+                <td colspan="1" rowspan="3">
+                  <div class="time">
+                    <span>Прием Кардиолога</span>
+                    <p>07:00 - 08:45</p>
+                  </div>
+                </td>
+                <td colspan="1">
+                </td>
+                <td colspan="1">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  17:00
+                </td>
+                <td colspan="1">
+                </td>
+                <td colspan="1">
+                </td>
+                <td colspan="1">
+                </td>
+                <td colspan="1">
+                  <div class="time">
+                    <span>Прием Кардиолога</span>
+                    <p>07:00 - 08:45</p>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  18:00
+                </td>
+                <td colspan="1">
+                </td>
+                <td colspan="1">
+                  <div class="time">
+                    <span>Прием Кардиолога</span>
+                    <p>07:00 - 08:45</p>
+                  </div>
+                </td>
+                <td colspan="1">
+                </td>
+                <td colspan="1">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <table data-target="endocrinologist">
+            <thead>
+              <tr>
+                <th>
+                </th>
+                <th>
+                  понедельник
+                </th>
+                <th>
+                  вторник
+                </th>
+                <th>
+                  среда
+                </th>
+                <th>
+                  четверг
+                </th>
+                <th>
+                  пятница
+                </th>
+                <th>
+                  суббота
+                </th>
+                <th>
+                  воскресенье
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  08:00
+                </td>
+                <td rowspan="1">
+                  <div class="time">
+                    <span>Прием Кардиолога</span>
+                    <p>07:00 - 08:45</p>
+                  </div>
+                </td>
+                <td colspan="1" rowspan="2">
+                </td>
+                <td colspan="1" rowspan="2">
+                </td>
+                <td colspan="1" rowspan="1">
+                </td>
+                <td colspan="1" rowspan="1">
+                </td>
+                <td colspan="1" rowspan="2">
+                </td>
+                <td colspan="1">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  09:00
+                </td>
+                <td colspan="1" rowspan="3">
+                  <div class="time">
+                    <span>Прием Кардиолога</span>
+                    <p>07:00 - 08:45</p>
+                  </div>
+                </td>
+                <td colspan="1" rowspan="2">
+                </td>
+                <td colspan="1" rowspan="2">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  10:00
+                </td>
+                <td colspan="1" rowspan="2">
+                </td>
+                <td colspan="1" rowspan="2">
+                </td>
+                <td colspan="1" rowspan="4">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  11:00
+                </td>
+                <td colspan="1" rowspan="3">
+                </td>
+                <td colspan="1">
+                </td>
+                <td colspan="1">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  12:00
+                </td>
+                <td colspan="1" rowspan="2">
+                </td>
+                <td colspan="1" rowspan="3">
+                </td>
+                <td colspan="1" rowspan="2">
+                </td>
+                <td colspan="1">
+                </td>
+                <td colspan="1">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  13:00
+                </td>
+                <td colspan="1" rowspan="2">
+                  <div class="time">
+                    <span>Прием Кардиолога</span>
+                    <p>07:00 - 08:45</p>
+                  </div>
+                </td>
+                <td colspan="1" rowspan="3">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  14:00
+                </td>
+                <td colspan="1" rowspan="2">
+                </td>
+                <td colspan="1" rowspan="3">
+                </td>
+                <td colspan="1" rowspan="2">
+                </td>
+                <td colspan="1" rowspan="1">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  15:00
+                </td>
+                <td colspan="1" rowspan="2">
+                </td>
+                <td colspan="1" rowspan="1">
+                </td>
+                <td colspan="1" rowspan="4">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  16:00
+                </td>
+                <td colspan="1" rowspan="3">
+                  <div class="time">
+                    <span>Прием Кардиолога</span>
+                    <p>07:00 - 08:45</p>
+                  </div>
+                </td>
+                <td colspan="1" rowspan="3">
+                  <div class="time">
+                    <span>Прием Кардиолога</span>
+                    <p>07:00 - 08:45</p>
+                  </div>
+                </td>
+                <td colspan="1">
+                </td>
+                <td colspan="1">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  17:00
+                </td>
+                <td colspan="1">
+                </td>
+                <td colspan="1">
+                </td>
+                <td colspan="1">
+                </td>
+                <td colspan="1">
+                  <div class="time">
+                    <span>Прием Кардиолога</span>
+                    <p>07:00 - 08:45</p>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  18:00
+                </td>
+                <td colspan="1">
+                </td>
+                <td colspan="1">
+                  <div class="time">
+                    <span>Прием Кардиолога</span>
+                    <p>07:00 - 08:45</p>
+                  </div>
+                </td>
+                <td colspan="1">
+                </td>
+                <td colspan="1">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <table data-target="gastroenterologist">
+            <thead>
+              <tr>
+                <th>
+                </th>
+                <th>
+                  понедельник
+                </th>
+                <th>
+                  вторник
+                </th>
+                <th>
+                  среда
+                </th>
+                <th>
+                  четверг
+                </th>
+                <th>
+                  пятница
+                </th>
+                <th>
+                  суббота
+                </th>
+                <th>
+                  воскресенье
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  08:00
+                </td>
+                <td rowspan="1">
+                  <div class="time">
+                    <span>Прием Кардиолога</span>
+                    <p>07:00 - 08:45</p>
+                  </div>
+                </td>
+                <td colspan="1" rowspan="2">
+                </td>
+                <td colspan="1" rowspan="2">
+                </td>
+                <td colspan="1" rowspan="1">
+                </td>
+                <td colspan="1" rowspan="1">
+                </td>
+                <td colspan="1" rowspan="2">
+                </td>
+                <td colspan="1">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  09:00
+                </td>
+                <td colspan="1" rowspan="3">
+                  <div class="time">
+                    <span>Прием Кардиолога</span>
+                    <p>07:00 - 08:45</p>
+                  </div>
+                </td>
+                <td colspan="1" rowspan="2">
+                </td>
+                <td colspan="1" rowspan="2">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  10:00
+                </td>
+                <td colspan="1" rowspan="2">
+                </td>
+                <td colspan="1" rowspan="2">
+                </td>
+                <td colspan="1" rowspan="4">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  11:00
+                </td>
+                <td colspan="1" rowspan="3">
+                </td>
+                <td colspan="1">
+                </td>
+                <td colspan="1">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  12:00
+                </td>
+                <td colspan="1" rowspan="2">
+                </td>
+                <td colspan="1" rowspan="3">
+                </td>
+                <td colspan="1" rowspan="2">
+                </td>
+                <td colspan="1">
+                </td>
+                <td colspan="1">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  13:00
+                </td>
+                <td colspan="1" rowspan="2">
+                  <div class="time">
+                    <span>Прием Кардиолога</span>
+                    <p>07:00 - 08:45</p>
+                  </div>
+                </td>
+                <td colspan="1" rowspan="3">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  14:00
+                </td>
+                <td colspan="1" rowspan="2">
+                </td>
+                <td colspan="1" rowspan="3">
+                </td>
+                <td colspan="1" rowspan="2">
+                </td>
+                <td colspan="1" rowspan="1">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  15:00
+                </td>
+                <td colspan="1" rowspan="2">
+                </td>
+                <td colspan="1" rowspan="1">
+                </td>
+                <td colspan="1" rowspan="4">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  16:00
+                </td>
+                <td colspan="1" rowspan="3">
+                  <div class="time">
+                    <span>Прием Кардиолога</span>
+                    <p>07:00 - 08:45</p>
+                  </div>
+                </td>
+                <td colspan="1" rowspan="3">
+                  <div class="time">
+                    <span>Прием Кардиолога</span>
+                    <p>07:00 - 08:45</p>
+                  </div>
+                </td>
+                <td colspan="1">
+                </td>
+                <td colspan="1">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  17:00
+                </td>
+                <td colspan="1">
+                </td>
+                <td colspan="1">
+                </td>
+                <td colspan="1">
+                </td>
+                <td colspan="1">
+                  <div class="time">
+                    <span>Прием Кардиолога</span>
+                    <p>07:00 - 08:45</p>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  18:00
+                </td>
+                <td colspan="1">
+                </td>
+                <td colspan="1">
+                  <div class="time">
+                    <span>Прием Кардиолога</span>
+                    <p>07:00 - 08:45</p>
+                  </div>
+                </td>
+                <td colspan="1">
+                </td>
+                <td colspan="1">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <table data-target="ray">
+            <thead>
+              <tr>
+                <th>
+                </th>
+                <th>
+                  понедельник
+                </th>
+                <th>
+                  вторник
+                </th>
+                <th>
+                  среда
+                </th>
+                <th>
+                  четверг
+                </th>
+                <th>
+                  пятница
+                </th>
+                <th>
+                  суббота
+                </th>
+                <th>
+                  воскресенье
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  08:00
+                </td>
+                <td rowspan="1">
+                  <div class="time">
+                    <span>Прием Кардиолога</span>
+                    <p>07:00 - 08:45</p>
+                  </div>
+                </td>
+                <td colspan="1" rowspan="2">
+                </td>
+                <td colspan="1" rowspan="2">
+                </td>
+                <td colspan="1" rowspan="1">
+                </td>
+                <td colspan="1" rowspan="1">
+                </td>
+                <td colspan="1" rowspan="2">
+                </td>
+                <td colspan="1">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  09:00
+                </td>
+                <td colspan="1" rowspan="3">
+                  <div class="time">
+                    <span>Прием Кардиолога</span>
+                    <p>07:00 - 08:45</p>
+                  </div>
+                </td>
+                <td colspan="1" rowspan="2">
+                </td>
+                <td colspan="1" rowspan="2">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  10:00
+                </td>
+                <td colspan="1" rowspan="2">
+                </td>
+                <td colspan="1" rowspan="2">
+                </td>
+                <td colspan="1" rowspan="4">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  11:00
+                </td>
+                <td colspan="1" rowspan="3">
+                </td>
+                <td colspan="1">
+                </td>
+                <td colspan="1">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  12:00
+                </td>
+                <td colspan="1" rowspan="2">
+                </td>
+                <td colspan="1" rowspan="3">
+                </td>
+                <td colspan="1" rowspan="2">
+                </td>
+                <td colspan="1">
+                </td>
+                <td colspan="1">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  13:00
+                </td>
+                <td colspan="1" rowspan="2">
+                  <div class="time">
+                    <span>Прием Кардиолога</span>
+                    <p>07:00 - 08:45</p>
+                  </div>
+                </td>
+                <td colspan="1" rowspan="3">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  14:00
+                </td>
+                <td colspan="1" rowspan="2">
+                </td>
+                <td colspan="1" rowspan="3">
+                </td>
+                <td colspan="1" rowspan="2">
+                </td>
+                <td colspan="1" rowspan="1">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  15:00
+                </td>
+                <td colspan="1" rowspan="2">
+                </td>
+                <td colspan="1" rowspan="1">
+                </td>
+                <td colspan="1" rowspan="4">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  16:00
+                </td>
+                <td colspan="1" rowspan="3">
+                  <div class="time">
+                    <span>Прием Кардиолога</span>
+                    <p>07:00 - 08:45</p>
+                  </div>
+                </td>
+                <td colspan="1" rowspan="3">
+                  <div class="time">
+                    <span>Прием Кардиолога</span>
+                    <p>07:00 - 08:45</p>
+                  </div>
+                </td>
+                <td colspan="1">
+                </td>
+                <td colspan="1">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  17:00
+                </td>
+                <td colspan="1">
+                </td>
+                <td colspan="1">
+                </td>
+                <td colspan="1">
+                </td>
+                <td colspan="1">
+                  <div class="time">
+                    <span>Прием Кардиолога</span>
+                    <p>07:00 - 08:45</p>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  18:00
+                </td>
+                <td colspan="1">
+                </td>
+                <td colspan="1">
+                  <div class="time">
+                    <span>Прием Кардиолога</span>
+                    <p>07:00 - 08:45</p>
+                  </div>
+                </td>
+                <td colspan="1">
+                </td>
+                <td colspan="1">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+        </div>
+        <div class="timetable_calendar_wrap">
+          <div class="timetable_calendar_wrap_item">
+            <div style="background: #3262A1;" class="timetable_calendar_wrap_item_dot"></div>
+            <p>Свободное время</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- TIMETABLE  -->
+
+    <!-- FOOTER  -->
+    <section class="upper_footer">
+      <div class="container">
+        <div class="upper_footer_block">
+          <p>Комплексный подход <br>
+            к здоровью пациента</p>
+          <div class="upper_footer_block_images">
+            <img src="img/footer/logo_1.svg" alt="">
+            <img src="img/footer/logo_2.svg" alt="">
+            <img src="img/footer/logo_3.svg" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-xl-2">
+            <ul>
+              <li>
+                <a href="#">Услуги</a>
+              </li>
+              <li>
+                <a href="#">Расписание</a>
+              </li>
+              <li>
+                <a href="">Врачи</a>
+              </li>
+              <li>
+                <a href="">Контакты</a>
+              </li>
+              <li>
+                <a href="">Новости</a>
+              </li>
+              <li>
+                <a href="">Цены</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-6 col-xl-3">
+            <div class="footer_item">
+              <h3>Адрес</h3>
+              <div class="footer_item_list">
+                <div class="footer_item_list_wrap">
+                  <p>г. Москва, ул 5-я кожуховская, дом 28</p>
+                </div>
+                <div class="footer_item_list_wrap">
+                  <span>Для связи с нами</span>
+                  <p>Тел: <a href="tel:+79852275227">+7-985-227-5-227</a></p>
+                </div>
+
+                <div class="footer_item_list_wrap">
+                  <span>Часы работы</span>
+                  <p>C 7:00 до 20:00 ПН-ВС</p>
+                </div>
+
+                <div class="footer_item_list_wrap">
+                  <span>электронная почта:</span>
+                  <p><a href="mailto:info@ica.clinic.">info@ica.clinic.</a></p>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-xl-4">
+            <div class="footer_item">
+              <h3>РЕКВИЗИТЫ</h3>
+              <div class="footer_item_list">
+                <div class="footer_item_list_wrap">
+                  <p>АНО «Международная клиника кардиологии»</p>
+                </div>
+                <div class="footer_item_list_wrap">
+                  <p>ИНН:11111111111111111</p>
+                </div>
+                <div class="footer_item_list_wrap">
+                  <p>ОГРН:11111111111111111</p>
+                </div>
+                <div class="footer_item_list_wrap">
+                  <span>ЮРИДИЧЕСКИЙ АДРЕС</span>
+                  <p>117393, Г. Москва ул. Ак пилюгина, д. 26/2</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-xl-3">
+            <div class="footer_social">
+              <a href="#">
+                <img src="img/footer/vk.svg" alt="">
+              </a>
+              <a href="#">
+                <img src="img/footer/telegram.svg" alt="">
+              </a>
+              <a href="#">
+                <img src="img/footer/wap.svg" alt="">
+              </a>
+              <a href="#">
+                <img src="img/footer/yt.svg" alt="">
+              </a>
+            </div>
+            <div class="footer_links">
+              <a href="#">Стать партнером</a>
+              <a href="#">Вакансии</a>
+              <a href="#">Оставить отзыв</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+    <div class="footer_under">
+      <div class="container">
+        <div class="footer_under_links">
+          <a href="#">Условия использования</a>
+          <span>|</span>
+          <a href="#">Политика конфиденциальности</a>
+        </div>
+        <p>© 2024 Международная клиника кардиоангиологии. Все права защищены.</p>
+      </div>
+    </div>
+     <!-- FOOTER  -->
+
+     <!-- MODAL  -->
+    <div class="modal fade" id="appointment" tabindex="-1" aria-labelledby="appointmentLabel" aria-hidden="true">
+      <div class="modal-dialog modal_white">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">ЗАПИСАТЬСЯ НА ПРИЁМ</h5>
+            <button type="button" data-bs-dismiss="modal" aria-label="Close">
+              <img src="img/modal/close.svg" alt="">
+            </button>
+          </div>
+          <div class="modal-body">
+            <form action="">
+              <input type="text" placeholder="Услуга">
+              <input class="date" type="date" />
+              <input type="text" placeholder="Время">
+              <input type="text" placeholder="ФИО">
+              <input type="tel" placeholder="Номер телефона">
+              <input type="email" placeholder="Почта">
+              <div class="modal_submit">
+                <button type="submit" class="btn_default">Записаться на прием</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="signup" tabindex="-1" aria-labelledby="signupLabel" aria-hidden="true">
+      <div class="modal-dialog modal_blue">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">ЗАПИСАТЬСЯ НА ПРИЁМ</h5>
+            <button type="button" data-bs-dismiss="modal" aria-label="Close">
+              <img src="img/modal/close_white.svg" alt="">
+            </button>
+          </div>
+          <div class="modal-body">
+            <form action="">
+              <input type="text" placeholder="Услуга">
+              <input class="date" type="date" />
+              <input type="text" placeholder="Время">
+              <input type="text" placeholder="ФИО">
+              <input type="tel" placeholder="Номер телефона">
+              <input type="email" placeholder="Почта">
+              <div class="modal_submit">
+                <button type="submit" class="btn_default">Записаться на прием</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="corporate" tabindex="-1" aria-labelledby="corporateLabel" aria-hidden="true">
+      <div class="modal-dialog modal_blue">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Заявка на корпоративное предложение</h5>
+            <p>Подберем индивидуальный объем обследований 
+              и годового лимита исследований для каждого сотрудника</p>
+            <button type="button" data-bs-dismiss="modal" aria-label="Close">
+              <img src="img/modal/close_white.svg" alt="">
+            </button>
+          </div>
+          <div class="modal-body">
+            <form action="">
+              <input type="text" placeholder="Название компании">
+              <input type="number" placeholder="Количество сотрудников">
+              <p>Выберите необходимые услуги</p>
+              <label>Прием специалистов
+                <input type="checkbox">
+                <span class="checkmark"></span>
+              </label>
+              <label>Лабораторная диагностика
+                <input type="checkbox">
+                <span class="checkmark"></span>
+              </label>
+              <label>Функциональная диагностика
+                <input type="checkbox">
+                <span class="checkmark"></span>
+              </label>
+              <label>Ультразвуковое исследование (УЗИ)
+                <input type="checkbox">
+                <span class="checkmark"></span>
+              </label>
+              <label>Ангиография 
+                <input type="checkbox">
+                <span class="checkmark"></span>
+              </label>
+              <label>Гастроскопия
+                <input type="checkbox">
+                <span class="checkmark"></span>
+              </label>
+              <input type="text" placeholder="ФИО">
+              <input type="tel" placeholder="Номер телефона">
+              <input type="email" placeholder="Почта">
+              <div class="modal_submit">
+                <button type="submit" class="btn_default">ОТправить</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="drom_menu">
+      <div class="drom_menu_header">
+        <div class="drom_menu_header_close">
+          <img src="img/modal/close.svg" alt="">
+        </div>
+      </div>
+      <ul>
+        <li class="drop active">
+          <div class="drom_menu_top">
+            <a class="active" href="#">Главная</a>
+            <button>
+              <svg width="8" height="5" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.11719 0.889999H7.14062C7.5625 0.889999 7.77344 1.40562 7.46875 1.71031L4.46875 4.71031C4.28125 4.89781 3.97656 4.89781 3.78906 4.71031L0.789062 1.71031C0.484375 1.40562 0.695312 0.889999 1.11719 0.889999Z" fill="#3668AB"/>
+              </svg>
+            </button>
+          </div>
+          <ul class="drop_menu">
+            <li>
+              <a href="#">Menu 1 
+                <svg width="8" height="4" viewBox="0 0 8 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0.726562 0H6.75C7.17188 0 7.38281 0.515625 7.07812 0.820312L4.07812 3.82031C3.89062 4.00781 3.58594 4.00781 3.39844 3.82031L0.398438 0.820312C0.09375 0.515625 0.304688 0 0.726562 0Z" fill="white"/>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#">Menu 1</a>
+            </li>
+            <li>
+              <a href="#">Menu 2</a>
+            </li>
+          </ul>
+        </li>
+        <li class="drop">
+          <div class="drom_menu_top">
+            <a class="active" href="#">Услуги</a>
+            <button>
+              <svg width="8" height="5" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.11719 0.889999H7.14062C7.5625 0.889999 7.77344 1.40562 7.46875 1.71031L4.46875 4.71031C4.28125 4.89781 3.97656 4.89781 3.78906 4.71031L0.789062 1.71031C0.484375 1.40562 0.695312 0.889999 1.11719 0.889999Z" fill="#3668AB"/>
+              </svg>
+            </button>
+          </div>
+          <ul class="drop_menu">
+            <li>
+              <a href="#">Прием специалистов 
+                <svg width="8" height="4" viewBox="0 0 8 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0.726562 0H6.75C7.17188 0 7.38281 0.515625 7.07812 0.820312L4.07812 3.82031C3.89062 4.00781 3.58594 4.00781 3.39844 3.82031L0.398438 0.820312C0.09375 0.515625 0.304688 0 0.726562 0Z" fill="white"/>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#">Гастроскопия</a>
+            </li>
+            <li>
+              <a href="#">Функциональная 
+                диагностика</a>
+            </li>
+            <li>
+              <a href="#">Ультразвуковое 
+                исследование (УЗИ)</a>
+            </li>
+            <li>
+              <a href="#">Лабораторная 
+                диагностика</a>
+            </li>
+            <li>
+              <a href="#">Ангиография 
+                (рентгеноконтрастное 
+                исследование сосудов)</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <div class="drom_menu_top">
+            <a href="#">Расписание</a>
+          </div>
+        </li>
+        <li class="drop">
+          <div class="drom_menu_top">
+            <a class="active" href="#">Врачи</a>
+            <button>
+              <svg width="8" height="5" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.11719 0.889999H7.14062C7.5625 0.889999 7.77344 1.40562 7.46875 1.71031L4.46875 4.71031C4.28125 4.89781 3.97656 4.89781 3.78906 4.71031L0.789062 1.71031C0.484375 1.40562 0.695312 0.889999 1.11719 0.889999Z" fill="#3668AB"/>
+              </svg>
+            </button>
+          </div>
+          <ul class="drop_menu">
+            <li>
+              <a href="#">Прием специалистов 
+                <svg width="8" height="4" viewBox="0 0 8 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0.726562 0H6.75C7.17188 0 7.38281 0.515625 7.07812 0.820312L4.07812 3.82031C3.89062 4.00781 3.58594 4.00781 3.39844 3.82031L0.398438 0.820312C0.09375 0.515625 0.304688 0 0.726562 0Z" fill="white"/>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#">Гастроскопия</a>
+            </li>
+            <li>
+              <a href="#">Функциональная 
+                диагностика</a>
+            </li>
+            <li>
+              <a href="#">Ультразвуковое 
+                исследование (УЗИ)</a>
+            </li>
+            <li>
+              <a href="#">Лабораторная 
+                диагностика</a>
+            </li>
+            <li>
+              <a href="#">Ангиография 
+                (рентгеноконтрастное 
+                исследование сосудов)</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <div class="drom_menu_top">
+            <a href="#">Контакты</a>
+          </div>
+        </li>
+        <li>
+          <div class="drom_menu_top">
+            <a href="#">Новости</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <!-- MODAL  -->
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js" integrity="sha512-GDey37RZAxFkpFeJorEUwNoIbkTwsyC736KNSYucu1WJWFK9qTdzYub8ATxktr6Dwke7nbFaioypzbDOQykoRg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.8/jquery.inputmask.min.js" integrity="sha512-efAcjYoYT0sXxQRtxGY37CKYmqsFVOIwMApaEbrxJr4RwqVVGw8o+Lfh/+59TU07+suZn1BWq4fDl5fdgyCNkw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/main.js"></script>
+
+  </body>
+</html>
