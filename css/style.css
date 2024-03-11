@@ -2088,7 +2088,11 @@ h2 {
 }
 .front_news_mob form input[type=date]::-webkit-calendar-picker-indicator {
   display: none;
-  background-image: url("../img/front_news/date_blue.svg");
+  background: none;
+}
+.front_news_mob form input[type=date]:not(.has-value):before {
+  color: lightgray;
+  content: attr(placeholder);
 }
 .front_news_mob form input[type=email] {
   padding: 0px 10px 6px 10px;
@@ -6146,11 +6150,6 @@ h2 {
 
 .modal .politic_accept {
   font-weight: 300;
-}
-
-input[type=date]:not(.has-value):before {
-  color: lightgray;
-  content: attr(placeholder);
 }
 
 .upper_footer {
