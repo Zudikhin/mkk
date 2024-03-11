@@ -2083,9 +2083,11 @@ h2 {
   color: #fff;
 }
 .front_news_mob form input[type=date] {
+  padding: 0px 10px 6px 8px;
   background: transparent;
 }
 .front_news_mob form input[type=date]::-webkit-calendar-picker-indicator {
+  display: none;
   background-image: url("../img/front_news/date_blue.svg");
 }
 .front_news_mob form input[type=email] {
@@ -5682,6 +5684,7 @@ h2 {
   padding: 0px 4px 6px 10px;
 }
 .modal_white .modal-content .modal-body form input.date::-webkit-calendar-picker-indicator {
+  display: none;
   background-image: url("../img/modal/date_blue.svg");
 }
 .modal_white .modal-content .modal-body form input[type=email] {
@@ -5708,6 +5711,13 @@ h2 {
     padding-bottom: 70px;
     padding-left: 78px;
     padding-right: 78px;
+  }
+  .modal_white .modal-content .modal-body form input.date {
+    padding: 0px 4px 6px 10px;
+  }
+  .modal_white .modal-content .modal-body form input.date::-webkit-calendar-picker-indicator {
+    display: block;
+    background-image: url("../img/modal/date_blue.svg");
   }
   .modal_white .modal-content .modal-body form button {
     margin-top: 38px;
@@ -5814,6 +5824,7 @@ h2 {
   background: transparent;
 }
 .modal_blue .modal-content .modal-body form input[type=date]::-webkit-calendar-picker-indicator {
+  display: none;
   background-image: url("../img/front_news/date_white.svg");
 }
 .modal_blue .modal-content .modal-body form input[type=number] {
@@ -5911,6 +5922,13 @@ h2 {
     padding-bottom: 70px;
     padding-left: 78px;
     padding-right: 78px;
+  }
+  .modal_blue .modal-content .modal-body form input[type=date] {
+    padding: 0px 4px 6px 10px;
+  }
+  .modal_blue .modal-content .modal-body form input[type=date]::-webkit-calendar-picker-indicator {
+    display: block;
+    background-image: url("../img/modal/date_blue.svg");
   }
   .modal_blue .modal-content .modal-body form button {
     margin-top: 38px;
