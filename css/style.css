@@ -6148,6 +6148,17 @@ h2 {
   font-weight: 300;
 }
 
+input[type=date]:before {
+  content: attr(placeholder) !important;
+  color: #aaa;
+  margin-right: 0.5em;
+}
+
+input[type=date]:focus:before,
+input[type=date]:valid:before {
+  content: "";
+}
+
 .upper_footer {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
