@@ -648,7 +648,7 @@
               <input type="text" placeholder="Имя Фамилия">
               <input type="email" placeholder="Email">
               <input type="tel" placeholder="Номер телефона">
-              <input class="date" type="date" placeholder="дд.мм.гггг" />
+              <input class="date" type="date" />
               <select>
                 <option selected>Выберите направление</option>
                 <option value="Прием специалистов">Прием специалистов</option>
@@ -799,7 +799,7 @@
           <div class="modal-body">
             <form action="">
               <input type="text" placeholder="Услуга">
-              <input class="date" type="date" />
+              <input class="date" type="date" placeholder="дд.мм.гггг" onchange="this.className=(this.value!=''?'has-valu':'')" />
               <input type="text" placeholder="Время">
               <input type="text" placeholder="ФИО">
               <input type="tel" placeholder="Номер телефона">

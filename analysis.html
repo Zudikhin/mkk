@@ -7,7 +7,6 @@
     <title>Document</title>
     <meta name="author" content="Yuriy Zudikhin https://t.me/Zudihin"/>
     <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.7.14/css/bootstrap-datetimepicker.min.css">
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/nice-select.css">
     <link rel="stylesheet" href="css/style.css" />
@@ -499,7 +498,7 @@
                 <input type="text" placeholder="Имя Фамилия">
                 <input type="email" placeholder="Email">
                 <input type="tel" placeholder="Номер телефона">
-                <input class="date" type="date">
+                <input class="date" type="date" placeholder="дд.мм.гггг" onchange="this.className=(this.value!=''?'has-value':'')">
                 <textarea name="" id="" cols="30" rows="10" placeholder="Причина обращения"></textarea>
                 <button class="btn_default" type="submit">Записаться на прием</button>
                 <label class="politic_accept">Согласие на обработку <a href="#">персональных данных</a>

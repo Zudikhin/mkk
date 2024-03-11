@@ -3730,10 +3730,14 @@ h2 {
 .content_block_form form input::-ms-input-placeholder { /* Edge 12 -18 */
   color: #fff;
 }
-.content_block_form form input[type=date] {
+.content_block_form form input.date {
   background: transparent;
 }
-.content_block_form form input[type=date]::-webkit-calendar-picker-indicator {
+.content_block_form form input.date:not(.has-value):before {
+  color: #23242C;
+  content: attr(placeholder);
+}
+.content_block_form form input.date::-webkit-calendar-picker-indicator {
   background-image: url("../img/front_news/date_white.svg");
 }
 .content_block_form form input[type=email] {
@@ -4520,6 +4524,12 @@ h2 {
   }
   .content_block_form {
     padding: 48px 48px 62px 48px;
+  }
+  .content_block_form form input.date {
+    padding: 0px 10px 6px 10px;
+  }
+  .content_block_form form input.date::before {
+    display: none;
   }
   .content_block_drop_wrap ul {
     margin-top: 0px;
@@ -5683,9 +5693,9 @@ h2 {
 .modal_white .modal-content .modal-body form input.date {
   padding: 0px 4px 6px 10px;
 }
-.modal_white .modal-content .modal-body form input.date::-webkit-calendar-picker-indicator {
-  display: none;
-  background-image: url("../img/modal/date_blue.svg");
+.modal_white .modal-content .modal-body form input.date:not(.has-value):before {
+  color: #23242C;
+  content: attr(placeholder);
 }
 .modal_white .modal-content .modal-body form input[type=email] {
   padding: 0px 10px 6px 10px;
@@ -5713,11 +5723,10 @@ h2 {
     padding-right: 78px;
   }
   .modal_white .modal-content .modal-body form input.date {
-    padding: 0px 4px 6px 10px;
+    padding: 0px 10px 6px 10px;
   }
-  .modal_white .modal-content .modal-body form input.date::-webkit-calendar-picker-indicator {
-    display: block;
-    background-image: url("../img/modal/date_blue.svg");
+  .modal_white .modal-content .modal-body form input.date::before {
+    display: none;
   }
   .modal_white .modal-content .modal-body form button {
     margin-top: 38px;
@@ -6512,6 +6521,11 @@ h2 {
   -webkit-appearance: none;
 }
 
+.date::-webkit-inner-spin-button,
+.date::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
 @media (min-width: 992px) {
   .date {
     -webkit-appearance: block;
@@ -6521,4 +6535,11 @@ h2 {
     display: block;
     -webkit-appearance: block;
   }
+  .date::-webkit-inner-spin-button,
+  .date::-webkit-outer-spin-button {
+    -webkit-appearance: block;
+  }
+}
+.date::-webkit-calendar-picker-indicator {
+  margin-left: 100px;
 }
