@@ -5824,7 +5824,7 @@ h2 {
   background: transparent;
 }
 .modal_blue .modal-content .modal-body form input[type=date]::-webkit-calendar-picker-indicator {
-  display: none;
+  background: none;
   background-image: url("../img/front_news/date_white.svg");
 }
 .modal_blue .modal-content .modal-body form input[type=number] {
@@ -6158,7 +6158,8 @@ input[type=date]::before {
  * 'mm/dd/yyyy' value and when valid to show the users' date of birth value.
  */
 input[type=date]:focus::before,
-input[type=date]:valid::before {
+input[type=date]:valid::before,
+input[type=date]:invalid::before {
   display: none;
 }
 
