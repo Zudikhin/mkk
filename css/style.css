@@ -370,6 +370,10 @@ h2 {
   background: transparent;
 }
 
+.has-value {
+  background: transparent;
+}
+
 .header {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -3740,6 +3744,9 @@ h2 {
 .content_block_form form input.date::-webkit-calendar-picker-indicator {
   background-image: url("../img/front_news/date_white.svg");
 }
+.content_block_form form input.has-value::-webkit-calendar-picker-indicator {
+  background-image: url("../img/front_news/date_white.svg");
+}
 .content_block_form form input[type=email] {
   padding: 0px 10px 6px 10px;
   background: transparent;
@@ -6526,6 +6533,21 @@ h2 {
   -webkit-appearance: none;
 }
 
+.has-value {
+  -webkit-appearance: none;
+}
+
+.has-value::-webkit-inner-spin-button,
+.has-value::-webkit-calendar-picker-indicator {
+  display: none;
+  -webkit-appearance: none;
+}
+
+.has-value::-webkit-inner-spin-button,
+.has-value::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
 @media (min-width: 992px) {
   .date {
     -webkit-appearance: block;
@@ -6537,6 +6559,18 @@ h2 {
   }
   .date::-webkit-inner-spin-button,
   .date::-webkit-outer-spin-button {
+    -webkit-appearance: block;
+  }
+  .has-value {
+    -webkit-appearance: block;
+  }
+  .has-value::-webkit-inner-spin-button,
+  .has-value::-webkit-calendar-picker-indicator {
+    display: block;
+    -webkit-appearance: block;
+  }
+  .has-value::-webkit-inner-spin-button,
+  .has-value::-webkit-outer-spin-button {
     -webkit-appearance: block;
   }
 }

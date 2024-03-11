@@ -649,7 +649,7 @@
           <div class="modal-body">
             <form action="">
               <input type="text" placeholder="Услуга">
-              <input class="date" type="date" />
+              <input class="date" type="date" placeholder="дд.мм.гггг" onchange="this.className=(this.value!=''?'has-value':'')" />
               <input type="text" placeholder="Время">
               <input type="text" placeholder="ФИО">
               <input type="tel" placeholder="Номер телефона">
@@ -665,7 +665,7 @@
           </div>
         </div>
       </div>
-     </div>
+    </div>
 
     <div class="modal fade" id="corporate" tabindex="-1" aria-labelledby="corporateLabel" aria-hidden="true">
       <div class="modal-dialog modal_blue">
@@ -868,7 +868,6 @@
     <!-- MODAL  -->
 
     <script src="js/jquery-3.6.0.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js" integrity="sha512-GDey37RZAxFkpFeJorEUwNoIbkTwsyC736KNSYucu1WJWFK9qTdzYub8ATxktr6Dwke7nbFaioypzbDOQykoRg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/jquery.nice-select.min.js"></script>
     <script src="js/slick.js"></script>
