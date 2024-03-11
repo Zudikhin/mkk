@@ -576,7 +576,7 @@
             <input type="text" placeholder="Имя Фамилия">
             <input type="email" placeholder="Email">
             <input type="tel" placeholder="Номер телефона">
-            <input type="date" data-placeholder="дд.мм.гггг" required aria-required="true" />
+            <input type="date" class="date" type="date" placeholder="дд.мм.гггг" onchange="this.className=(this.value!=''?'has-value':'')" />
             <select>
               <option selected>Выберите направление</option>
               <option value="Прием специалистов">Прием специалистов</option>
