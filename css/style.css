@@ -3738,11 +3738,14 @@ h2 {
   background: transparent;
 }
 .content_block_form form input.date:not(.has-value):before {
-  color: #23242C;
+  color: #fff;
   content: attr(placeholder);
 }
 .content_block_form form input.date::-webkit-calendar-picker-indicator {
   background-image: url("../img/front_news/date_white.svg");
+}
+.content_block_form form input.has-value {
+  background: transparent;
 }
 .content_block_form form input.has-value::-webkit-calendar-picker-indicator {
   background-image: url("../img/front_news/date_white.svg");
