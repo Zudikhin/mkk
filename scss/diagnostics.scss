@@ -1,0 +1,186 @@
+// DIAGNOSTICS 
+.diagnostics {
+    box-sizing: border-box;
+    position: relative;
+    padding: 62px 0px;
+    &_text {
+        & span {
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 21px;
+            color: rgba(0, 149, 228, 1);
+            text-transform: uppercase;
+        }
+        & h2 {
+            margin-top: 12px;
+            text-transform: uppercase;
+        }
+        & ul {
+            & li {
+                box-sizing: border-box;
+                padding-left: 17px;
+                position: relative;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+                color: rgba(49, 96, 159, 1);
+                margin-top: 16px;
+                &::after {
+                    content: "";
+                    position: absolute;
+                    left: 0px;
+                    top: 10px;
+                    width: 7px;
+                    height: 7px;
+                    background: rgba(0, 149, 228, 1);
+                }
+            }
+        }
+        & button {
+            box-sizing: border-box;
+            width: 100%;
+            height: 50px;
+            font-family: "Montserrat", sans-serif;
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 50px;
+            letter-spacing: 2.8px;
+            text-align: center;
+            background: rgba(76, 184, 224, 1);
+            color: #fff;
+            text-transform: uppercase;
+            transition: all 0.3s linear;
+            border-radius: 3px;
+            margin-top: 40px;
+            border: 1px solid rgb(76, 184, 224);
+            &:hover {
+                background-color: #fff;
+                color: rgb(76, 184, 224);
+                transition: all 0.3s linear;
+            }
+        }
+    }
+    &_images {
+        order: 2;
+        margin-top: 32px;
+        &_show {
+            width: 100%;
+            display: flex;
+            height: 240px;
+            object-fit: cover;
+        }
+        &_dots {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 24px;
+            & img {
+                width: calc(100%/3 - 5px);
+                cursor: pointer;
+                height: 80px;
+                object-fit: cover;
+                &.active {
+                    border: 1px solid #4CB8E0;
+                }
+            }
+        }
+    }
+    @media (min-width: 576px) {
+        &_images {
+            &_show {
+                height: 330px;
+            }
+            &_dots {
+                & img {
+                    height: 120px;
+                }
+            }
+        }
+    }
+    @media (min-width: 768px) {
+        &_text {
+            & button {
+                width: auto;
+                padding: 0px 25px;
+            }
+        }
+        &_images {
+            &_show {
+                height: 490px;
+            }
+            &_dots {
+                & img {
+                    height: 160px;
+                }
+            }
+        }
+    }
+    @media (min-width: 992px) {
+        &_images {
+            order: 1;
+            margin-top: 0px;
+            &_show {
+                height: 282px;
+            }
+            &_dots {
+                & img {
+                    height: 102px;
+                }
+            }
+        }
+        &_text {
+            order: 2;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: space-between;
+            & h2 {
+                margin-top: 0px;
+            }
+            & ul {
+                & li {
+                    &:first-child {
+                        margin-top: 0px;
+                    }
+                }
+            }
+            & button {
+                margin-top: 0px;
+            }
+        }
+    }
+    @media (min-width: 1200px) {
+        padding: 64px 0px 75px 0px;
+        &_images {
+            &_show {
+                height: 350px;
+            }
+            &_dots {
+                & img {
+                    width: calc(100%/3 - 26px/3);
+                    height: 99px;
+                }
+            }
+        }
+        &_text {
+            justify-content: flex-start;
+            padding-left: 90px;
+            & h2 {
+                margin-top: 8px;
+            }
+            & ul {
+                & li {
+                    margin-top: 26px;
+                    &:first-child {
+                        margin-top: 26px;
+                    }
+                }
+            }
+            & button {
+                height: 68px;
+                margin-top: 45px;
+            }
+        }
+    }
+}
+// DIAGNOSTICS 

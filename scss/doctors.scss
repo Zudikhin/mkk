@@ -1,0 +1,255 @@
+// DOCTORS 
+.doctors {
+    box-sizing: border-box;
+    position: relative;
+    padding: 70px 0px 62px 0px;
+    &_block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        & h2 {
+            position: relative;
+            text-transform: uppercase;
+            width: 100%;
+            &::after {
+                content: "";
+                position: absolute;
+                left: 0px;
+                top: -10px;
+                width: 110px;
+                height: 1px;
+                background: rgba(76, 184, 224, 1);
+            }
+        }
+        & p {
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 24px;
+            margin-top: 16px;
+            width: 100%;
+        }
+        &_slider {
+            width: 100%;
+            margin-top: 32px;
+            &_item {
+                &_wrap {
+                    position: relative;
+                    &_img {
+                        position: absolute;
+                        right: 0px;
+                        top: 0px;
+                        & img {
+                            width: 105px;
+                        }
+                    }
+                    &_text {
+                        &_top {
+                            width: calc(100% - 160px);
+                            & span {
+                                font-size: 12px;
+                                font-weight: 700;
+                                line-height: 18px;
+                                text-transform: uppercase;
+                                letter-spacing: 2.4px;
+                                color: #0095E4;
+                            }
+                            & h5 {
+                                font-family: "Montserrat", sans-serif;
+                                font-size: 18px;
+                                font-weight: 700;
+                                line-height: 25px;
+                                letter-spacing: -0.6px;
+                                margin-top: 7px;
+                                transition: all 0.3s linear;
+                                color: #3262A1;
+                            }
+                        }
+                        & p {
+                            font-size: 16px;
+                            font-weight: 300;
+                            line-height: 24px;
+                            text-align: left;
+                            margin-top: 22px;
+                            color: rgba(50, 98, 161, 1);
+                        }
+                        & span {
+                            display: flex;
+                            align-items: center;
+                            font-size: 14px;
+                            font-weight: 300;
+                            line-height: 24px;
+                            color: #3262A1;
+                            margin-top: 16px;
+                            text-transform: uppercase;
+                            & img {
+                                margin-right: 10px;
+                            }
+                        }
+                    }
+                }
+                &:hover {
+                    & .doctors_block_slider_item_wrap_text_top {
+                        & h5 {
+                            transition: all 0.3s linear;
+                            color: #4CB8E0;
+                        }
+                    }
+                }
+            }
+        }
+        &_arrows {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 58px;
+            &_prev {
+                cursor: pointer;
+                margin-right: 12px;
+            }
+            &_next {
+                cursor: pointer;
+                margin-left: 12px;
+            }
+        }
+        & .home_all {
+            margin-top: 40px;
+        }
+    }
+    @media (min-width: 768px) {
+        &_block {
+            &_slider {
+                &_item {
+                    &_wrap {
+                        display: flex;
+                        align-items: stretch;
+                        &_text {
+                            margin-left: 30px;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: flex-start;
+                            justify-content: space-between;
+                            box-sizing: border-box;
+                            padding: 20px 0px;
+                            &_top {
+                                width: 100%;
+                                & span {
+                                    margin-top: 0px;
+                                }
+                            }
+                        }
+                        &_img {
+                            position: relative;
+                            left: 0px;
+                            top: 0px;
+                            & img {
+                                width: 266px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media (min-width: 992px) {
+        &_block {
+            &_slider {
+                overflow: hidden;
+                &_item {
+                    &_wrap {
+                        &_img {
+                            & img {
+                                width: 230px;
+                            }
+                        }
+                        &_text {
+                            padding: 0px;
+                            & p {
+                                margin-top: 12px;
+                            }
+                        }
+                    }
+                }
+                & .slick-slide {
+                    margin: 0 15px;
+                }
+                & .slick-list {
+                    margin: 0 -15px;
+                }
+            }
+        }
+    }
+    @media (min-width: 1200px) {
+        padding: 75px 0px;
+        &_block {
+            align-items: flex-start;
+            & h2 {
+                &::after {
+                    left: 0px;
+                }
+            }
+            &_slider {
+                &_item {
+                    &_wrap {
+                        &_text {
+                            padding: 18px 0px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media (min-width: 1280px) {
+        &_block {
+            &_slider {
+                position: relative;
+                z-index: 2;
+            }
+            &_arrows {
+                width: calc(100% + 80px);
+                position: absolute;
+                left: -40px;
+                bottom: 180px;
+                justify-content: space-between;
+                margin-top: 0px;
+            }
+            & .home_all {
+                margin-top: 30px;
+            }
+        }
+    }
+    @media (min-width: 1360px) {
+        &_block {
+            &_arrows {
+                width: calc(100% + 100px);
+                position: absolute;
+                left: -50px;
+                bottom: 180px;
+                justify-content: space-between;
+            }
+        }
+    }
+    @media (min-width: 1440px) {
+        &_block {
+            & h2 {
+                &::after {
+                    left: -90px;
+                    width: 70px;
+                    top: 18px;
+                }
+            }
+        }
+    }
+    @media (min-width: 1600px) {
+        &_block {
+            & h2 {
+                &::after {
+                    left: -140px;
+                    width: 110px;
+                    top: 18px;
+                }
+            }
+        }
+    }
+}
+// DOCTORS 

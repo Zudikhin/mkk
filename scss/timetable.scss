@@ -1,0 +1,480 @@
+// TIMETABLE 
+
+.timetable_main {
+    box-sizing: border-box;
+    position: relative;
+    &_text {
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        padding: 65px 0px 32px 0px;
+        & h2 {
+            color: #3262A1;
+            font-family: "Montserrat", sans-serif;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 30px; /* 125% */
+            letter-spacing: -0.6px;
+            text-transform: uppercase;
+        }
+        & p {
+            color: #31609F;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 24px; /* 150% */
+            margin-top: 28px;
+        }
+        & button {
+            width: 100%;
+            height: 50px;
+            color: #FFF;
+            font-family: "Montserrat", sans-serif;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 600;
+            letter-spacing: 2.8px;
+            text-transform: uppercase;
+            margin-top: 32px;
+        }
+    }
+    &_img {
+        display: flex;
+        & img {
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+    @media (min-width: 768px) {
+        &_text {
+            align-items: flex-start;
+            padding: 72px 0px;
+            & button {
+                padding: 0px 25px;
+                width: auto;
+            }
+        }
+        &_img {
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    @media (min-width: 992px) {
+        &_img {
+            position: absolute;
+            right: 0px;
+            top: 0px;
+            width: 50%;
+            height: 100%;
+            object-fit: cover;
+            & img {
+                height: 100%;
+                object-position: center top;
+            }
+        }
+    }
+    @media (min-width: 1200px) {
+        &_text {
+            padding: 72px 60px 72px 0px;
+            & p {
+                font-size: 18px;
+                line-height: 30px;
+            }
+            & button {
+                height: 68px;
+                line-height: 68px;
+                margin-top: 24px;
+            }
+        }
+    }
+    @media (min-width: 1600px) {
+        &_text {
+            padding: 100px 60px 100px 0px;
+        }
+    }
+}
+
+.timetable_directions {
+    background: #F5F6F7;
+    box-sizing: border-box;
+    padding: 62px 0px;
+    &_block {
+        display: flex;
+        flex-direction: column;
+        &_drop {
+            margin-top: 16px;
+            & .nice-select {
+                width: 100%;
+                min-height: 50px;
+                height: auto;
+                background: transparent;
+                padding: 6px 30px 6px 20px;
+                border-radius: 0px;
+                border: 1px solid #F5F6F7;
+                background: #FFF;
+                display: flex;
+                align-items: center;
+                &::after {
+                    background: url(../img/timetable/arrow.svg);
+                    border: none;
+                    background-size: cover;
+                    width: 10px;
+                    height: 6px;
+                    -webkit-transform: rotate(0deg);
+                    transform: rotate(0deg);
+                    -webkit-transform-origin: center;
+                    transform-origin: center;
+                }
+                & .current {
+                    color: #31609F;
+                    font-family: 'Lato';
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 18px; /* 178.571% */
+                    text-transform: uppercase;
+                    white-space: wrap;
+                }
+                & .list {
+                    width: calc(100% + 2px);
+                    left: -1px;
+                    border-radius: 0px;
+                    margin-top: 0px;
+                    & li {
+                        display: flex;
+                        align-items: center;
+                        box-sizing: border-box;
+                        padding: 6px 20px;
+                        color: #31609F;
+                        font-family: 'Lato';
+                        font-size: 14px;
+                        min-height: 37px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 18px; /* 178.571% */
+                        text-transform: uppercase;
+                        white-space: wrap;
+                        &.selected {
+                            background: #4CB8E0;
+                            color: #fff;
+                        }
+                        &:hover {
+                            background: #4CB8E0;
+                            color: #fff;
+                        }
+                    }
+                }
+                &.open {
+                    &::after {
+                        -webkit-transform: rotate(-180deg);
+                        transform: rotate(-180deg);
+                    }
+                }
+            }
+        }
+    }
+    @media (min-width: 768px) {
+        &_block {
+            flex-direction: row;
+            align-items: flex-start;
+            &_drop {
+                margin-top: 0px;
+                min-width: 320px;
+            }
+        }
+    }
+    @media (min-width: 992px) {
+        padding: 42px 0px;
+        &_block {
+            align-items: center;
+            &_drop {
+                min-width: 370px;
+                width: 370px;
+                margin-left: 50px;
+            }
+        }
+    }
+    @media (min-width: 1200px) {
+        &_block {
+            &_drop {
+                & .nice-select {
+                    min-height: 62px;
+                }
+            }
+        }
+    }
+}
+
+.timetable_calendar {
+    margin-bottom: 44px;
+    &_mob {
+        display: block;
+        box-sizing: border-box;
+        padding-top: 32px;
+        position: relative;
+        &_item {
+            display: none;
+            &_nav {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                &_slider {
+                    width: calc(100% - 100px);
+                    &_item {
+                        & p {
+                            text-align: center;
+                            color: #31609F;
+                            text-align: center;
+                            font-size: 16px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: 30px; /* 187.5% */
+                            text-transform: uppercase;
+                        }
+                    }
+                }
+                &_prev {
+                    cursor: pointer;
+                }
+                &_next {
+                    cursor: pointer;
+                }
+            }
+            &_for {
+                margin-top: 32px;
+                &_item {
+                    & table {
+                        border-collapse: separate;
+                        border-spacing: 6px;
+                        width: 100%;
+                        & tbody {
+                            & tr {
+                                & td {
+                                    background: #F5F6F7;
+                                    height: 42px;
+                                    vertical-align: middle;
+                                    text-align: center;
+                                    color: #31609F;
+                                    font-size: 16px;
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    line-height: normal;
+                                    position: relative;
+                                    & .time {
+                                        background: #3262A1;
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: center;
+                                        position: absolute;
+                                        left: 0px;
+                                        top: 0px;
+                                        width: 100%;
+                                        height: 100%;
+                                        box-sizing: border-box;
+                                        & span {
+                                            color: #FFF;
+                                            text-align: center;
+                                            font-size: 16px;
+                                            font-style: normal;
+                                            font-weight: 400;
+                                            line-height: normal;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            &.active {
+                display: block;
+            }
+        }
+    }
+    &_desk {
+        display: none;
+        & table {
+            border-collapse: separate;
+            border-spacing: 6px;
+            width: 100%;
+            display: none;
+            & thead {
+                & th {
+                    color: #31609F;
+                    text-align: center;
+                    font-family: 'Lato';
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 30px; /* 187.5% */
+                    text-transform: uppercase;
+                    width: calc(100%/8);
+                }
+            }
+            & tbody {
+                &:before {
+                    content: "-";
+                    display: block;
+                    line-height: 1em;
+                    color: transparent;
+                }
+                & td {
+                    background: #F5F6F7;
+                    height: 66px;
+                    vertical-align: middle;
+                    text-align: center;
+                    color: #31609F;
+                    font-family: 'Lato';
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    position: relative;
+                    & .time {
+                        background: #3262A1;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        position: absolute;
+                        left: 0px;
+                        top: 0px;
+                        width: 100%;
+                        height: 100%;
+                        box-sizing: border-box;
+                        padding: 0px 15px;
+                        & span {
+                            color: #FFF;
+                            text-align: center;
+                            font-size: 12px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: normal;
+                        }
+                        & p {
+                            color: #F7FAFB;
+                            text-align: center;
+                            font-size: 16px;
+                            font-style: normal;
+                            font-weight: 700;
+                            line-height: 22px; /* 166.688% */
+                            margin-top: 10px;
+                        }
+                    }
+                }
+            }
+            &.active {
+                display: table;
+            }
+        }
+    }
+    &_wrap {
+        display: flex;
+        align-items: center;
+        margin-top: 28px;
+        &_item {
+            display: flex;
+            align-items: center;
+            margin-right: 20px;
+            &_dot {
+                width: 30px;
+                height: 30px;
+                background: #3262A1;
+            }
+            & p {
+                color: #697177;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 300;
+                margin-left: 6px;
+                line-height: 20px; /* 166.667% */
+            }
+        }
+    }
+    @media (min-width: 768px) {
+        &_mob {
+            display: none;
+        }
+        &_desk {
+            margin-top: 40px;
+            display: block;
+            & table {
+                & thead {
+                    & th {
+                        font-size: 12px;
+                        line-height: 20px;
+                    } 
+                }
+                & tbody {
+                    & tr {
+                        & td {
+                            & .time {
+                                padding: 0px 5px;
+                                & span {
+                                    font-size: 10px;
+                                }
+                                & p {
+                                    font-size: 10px;
+                                    margin-top: 3px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media (min-width: 992px) {
+        &_desk {
+            & table {
+                & tbody {
+                    & tr {
+                        & td {
+                            & .time {
+                                padding: 0px 5px;
+                                & span {
+                                    font-size: 10px;
+                                }
+                                & p {
+                                    font-size: 12px;
+                                    margin-top: 6px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media (min-width: 1200px) {
+        &_desk {
+            margin-top: 76px;
+            & table {
+                & thead {
+                    & th {
+                        font-size: 16px;
+                        line-height: 30px;
+                    }
+                }
+                & tbody {
+                    & tr {
+                        & td {
+                            & .time {
+                                padding: 0px 15px;
+                                & span {
+                                    font-size: 12px;
+                                }
+                                & p {
+                                    font-size: 16px;
+                                    margin-top: 9px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// TIMETABLE 

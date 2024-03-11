@@ -283,10 +283,10 @@ $(document).ready(function() {
 
     $("select").niceSelect();
 
-    // if($(".date").length) {
-    //   $(".date").datetimepicker({
-    //     format:'DD.MM.YYYY'
-    //   });
-    // }
+    if($(".date").length) {
+      $(".date").datetimepicker({
+        format:'DD.MM.YYYY'
+      });
+    }
     
 });
