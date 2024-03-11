@@ -6153,9 +6153,7 @@ input[type=date]:before {
   color: #fff;
 }
 
-input[type=date]:focus:before,
-input[type=date]:valid:before {
-  content: "";
+input[type=date]:focus:before {
   display: none;
 }
 
