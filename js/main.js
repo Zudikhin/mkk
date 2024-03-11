@@ -284,8 +284,9 @@ $(document).ready(function() {
     $("select").niceSelect();
 
     // if($(".date").length) {
-    //   $(".date").datetimepicker({
-    //     format:'DD.MM.YYYY'
+    //   $(".date").datepicker({
+    //     dateFormat: 'dd.mm.yyyy',
+    //     altFormat: 'dd.mm.yyyy'
     //   });
     // }
     
