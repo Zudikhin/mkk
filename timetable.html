@@ -240,14 +240,13 @@
               <button class="btn_default" data-bs-toggle="modal" data-bs-target="#signup">Записаться на прием</button>
             </div>
           </div>
-          <div class="col-12 col-lg-6">
-            <div class="timetable_main_img">
-              <img src="img/timetable/1.webp" alt="">
-            </div>
-          </div>
         </div>
       </div>
+      <div class="timetable_main_img">
+        <img src="img/timetable/1.webp" alt="">
+      </div>
     </section>
+
     <section class="timetable_directions">
       <div class="container">
         <div class="timetable_directions_block">
@@ -3605,11 +3604,11 @@
      <!-- FOOTER  -->
 
      <!-- MODAL  -->
-    <div class="modal fade" id="appointment" tabindex="-1" aria-labelledby="appointmentLabel" aria-hidden="true">
+     <div class="modal fade" id="appointment" tabindex="-1" aria-labelledby="appointmentLabel" aria-hidden="true">
       <div class="modal-dialog modal_white">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title">ЗАПИСАТЬСЯ НА ПРИЁМ</h5>
+            <h5 class="modal-title" id="vacanciesLabel">ЗАПИСАТЬСЯ НА ПРИЁМ</h5>
             <button type="button" data-bs-dismiss="modal" aria-label="Close">
               <img src="img/modal/close.svg" alt="">
             </button>
@@ -3622,6 +3621,10 @@
               <input type="text" placeholder="ФИО">
               <input type="tel" placeholder="Номер телефона">
               <input type="email" placeholder="Почта">
+              <label class="politic_accept">Согласие на обработку <a href="#">персональных данных</a>
+                <input type="checkbox">
+                <span class="checkmark"></span>
+              </label>
               <div class="modal_submit">
                 <button type="submit" class="btn_default">Записаться на прием</button>
               </div>
@@ -3648,9 +3651,14 @@
               <input type="text" placeholder="ФИО">
               <input type="tel" placeholder="Номер телефона">
               <input type="email" placeholder="Почта">
+              <label class="politic_accept">Согласие на обработку <a href="#">персональных данных</a>
+                <input type="checkbox">
+                <span class="checkmark"></span>
+              </label>
               <div class="modal_submit">
                 <button type="submit" class="btn_default">Записаться на прием</button>
               </div>
+              
             </form>
           </div>
         </div>
@@ -3700,6 +3708,10 @@
               <input type="text" placeholder="ФИО">
               <input type="tel" placeholder="Номер телефона">
               <input type="email" placeholder="Почта">
+              <label class="politic_accept">Согласие на обработку <a href="#">персональных данных</a>
+                <input type="checkbox">
+                <span class="checkmark"></span>
+              </label>
               <div class="modal_submit">
                 <button type="submit" class="btn_default">ОТправить</button>
               </div>

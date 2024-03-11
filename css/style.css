@@ -1179,6 +1179,9 @@ h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: 240px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .diagnostics_images_dots {
   display: -webkit-box;
@@ -1195,11 +1198,31 @@ h2 {
 .diagnostics_images_dots img {
   width: calc(33.3333333333% - 5px);
   cursor: pointer;
+  height: 80px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.diagnostics_images_dots img.active {
+  border: 1px solid #4CB8E0;
+}
+@media (min-width: 576px) {
+  .diagnostics_images_show {
+    height: 330px;
+  }
+  .diagnostics_images_dots img {
+    height: 120px;
+  }
 }
 @media (min-width: 768px) {
   .diagnostics_text button {
     width: auto;
     padding: 0px 25px;
+  }
+  .diagnostics_images_show {
+    height: 490px;
+  }
+  .diagnostics_images_dots img {
+    height: 160px;
   }
 }
 @media (min-width: 992px) {
@@ -1208,6 +1231,12 @@ h2 {
         -ms-flex-order: 1;
             order: 1;
     margin-top: 0px;
+  }
+  .diagnostics_images_show {
+    height: 282px;
+  }
+  .diagnostics_images_dots img {
+    height: 102px;
   }
   .diagnostics_text {
     -webkit-box-ordinal-group: 3;
@@ -1241,8 +1270,12 @@ h2 {
   .diagnostics {
     padding: 64px 0px 75px 0px;
   }
+  .diagnostics_images_show {
+    height: 350px;
+  }
   .diagnostics_images_dots img {
     width: calc(33.3333333333% - 8.6666666667px);
+    height: 99px;
   }
   .diagnostics_text {
     -webkit-box-pack: start;
@@ -1697,7 +1730,7 @@ h2 {
   line-height: 18px;
   text-transform: uppercase;
   letter-spacing: 2.4px;
-  color: rgb(0, 149, 228);
+  color: #0095E4;
 }
 .doctors_block_slider_item_wrap_text_top h5 {
   font-family: "Montserrat", sans-serif;
@@ -1708,6 +1741,7 @@ h2 {
   margin-top: 7px;
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
+  color: #3262A1;
 }
 .doctors_block_slider_item_wrap_text p {
   font-size: 16px;
@@ -1727,7 +1761,7 @@ h2 {
   font-size: 14px;
   font-weight: 300;
   line-height: 24px;
-  color: rgb(50, 98, 161);
+  color: #3262A1;
   margin-top: 16px;
   text-transform: uppercase;
 }
@@ -1917,6 +1951,9 @@ h2 {
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 0px;
 }
+.front_news .nice-select .current {
+  white-space: wrap;
+}
 .front_news .nice-select::after {
   background: url(../img/front_news/arrow.svg);
   border: none;
@@ -1937,6 +1974,15 @@ h2 {
   font-size: 18px;
   font-weight: 300;
   color: rgb(49, 96, 159);
+  white-space: wrap;
+  line-height: 22px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 6px 20px;
 }
 .front_news .nice-select .option.selected {
   background-color: rgb(76, 184, 224);
@@ -2381,16 +2427,25 @@ h2 {
   padding: 0px;
   width: 100%;
   border: none;
-  height: 50px;
+  min-height: 50px;
   font-family: "Lato", sans-serif;
   font-size: 16px;
   font-weight: 400;
-  line-height: 50px;
+  line-height: 20px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 0px;
   color: rgb(49, 96, 159);
-  padding-left: 21px;
+  padding: 6px 30px 6px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.care_form_select .nice-select .current {
+  white-space: wrap;
 }
 .care_form_select .nice-select::after {
   display: none;
@@ -2404,6 +2459,15 @@ h2 {
   font-size: 18px;
   font-weight: 300;
   color: rgb(49, 96, 159);
+  white-space: wrap;
+  line-height: 22px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 6px 20px;
 }
 .care_form_select .nice-select .option.selected {
   background-color: rgb(76, 184, 224);
@@ -4280,9 +4344,20 @@ h2 {
         -ms-flex-align: start;
             align-items: flex-start;
     position: relative;
+    margin-bottom: 0px;
   }
   .content_block ul.list_spec li {
     width: 50%;
+    margin-top: 0px;
+    line-height: 35px;
+  }
+  .content_block ul.list_spec li img {
+    margin-top: 11px;
+  }
+  .content_block ul.list_spec li:last-child {
+    margin-top: 0px;
+    -webkit-transform: translateY(-35px);
+            transform: translateY(-35px);
   }
   .content_block ul.list_price li {
     display: -webkit-box;
@@ -4436,7 +4511,7 @@ h2 {
     margin-top: 0px;
   }
   .content_block ul.list_spec {
-    margin-bottom: 50px;
+    margin-bottom: 0px;
   }
 }
 
@@ -4628,6 +4703,11 @@ h2 {
   color: #000;
   margin-top: 10px;
   width: 100%;
+}
+.contacts_main_form form label.politic_accept {
+  font-family: 300;
+  font-size: 14px;
+  margin-top: 32px;
 }
 .contacts_main_form form button {
   width: 100%;
@@ -4893,6 +4973,7 @@ h2 {
 .timetable_main {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  position: relative;
 }
 .timetable_main_text {
   display: -webkit-box;
@@ -4963,6 +5044,22 @@ h2 {
        object-fit: cover;
   }
 }
+@media (min-width: 992px) {
+  .timetable_main_img {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 50%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .timetable_main_img img {
+    height: 100%;
+    -o-object-position: center top;
+       object-position: center top;
+  }
+}
 @media (min-width: 1200px) {
   .timetable_main_text {
     padding: 72px 60px 72px 0px;
@@ -4975,6 +5072,11 @@ h2 {
     height: 68px;
     line-height: 68px;
     margin-top: 24px;
+  }
+}
+@media (min-width: 1600px) {
+  .timetable_main_text {
+    padding: 100px 60px 100px 0px;
   }
 }
 
@@ -5467,6 +5569,9 @@ h2 {
   margin-top: 35px;
   padding: 0px 24px;
 }
+.modal_white .modal-content .modal-body form .politic_accept {
+  color: #23242C;
+}
 @media (min-width: 768px) {
   .modal_white {
     width: 620px;
@@ -5544,7 +5649,7 @@ h2 {
   width: 100%;
   font-family: "Lato", sans-serif;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 700;
   line-height: 23px;
   letter-spacing: 0em;
   text-align: left;
@@ -5654,6 +5759,10 @@ h2 {
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
 }
+.modal_blue .modal-content .modal-body form label.politic_accept {
+  margin-top: 32px;
+  font-weight: 300;
+}
 .modal_blue .modal-content .modal-body form button {
   width: 100%;
   height: 42px;
@@ -5682,6 +5791,10 @@ h2 {
     line-height: 60px;
     padding: 0px 84px;
   }
+}
+
+#signup .modal-content .modal-body form input {
+  font-weight: 400;
 }
 
 .drom_menu {
@@ -5847,6 +5960,10 @@ h2 {
 }
 .drom_menu ul li.active .drom_menu_top svg path {
   fill: #4FB5EB;
+}
+
+.modal .politic_accept {
+  font-weight: 300;
 }
 
 .upper_footer {
@@ -6144,4 +6261,61 @@ h2 {
   font-size: 14px;
   font-weight: 300;
   line-height: 30px;
+}
+
+.politic_accept {
+  display: block;
+  position: relative;
+  padding-left: 32px;
+  cursor: pointer;
+  width: 100%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin-top: 32px;
+  color: #FFF;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 20px;
+}
+.politic_accept a {
+  color: #4CB8E0;
+  text-decoration-line: underline;
+}
+.politic_accept input {
+  margin-top: 0px;
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.politic_accept input:checked ~ .checkmark::after {
+  display: block;
+}
+.politic_accept .checkmark {
+  position: absolute;
+  top: -1px;
+  left: 0;
+  height: 24px;
+  width: 24px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 1px solid #DCDFE5;
+}
+.politic_accept .checkmark::after {
+  display: none;
+  content: "";
+  position: absolute;
+  left: 8px;
+  top: 3px;
+  width: 7px;
+  height: 13px;
+  border: solid #4CB8E0;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
 }

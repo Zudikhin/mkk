@@ -46,6 +46,8 @@ $(document).ready(function() {
 
     // DIAGNOSTICS 
     $(".diagnostics_images_dots img").click(function() {
+        $(".diagnostics_images_dots img").removeClass("active");
+        $(this).addClass("active");
         var src = $(this).attr("src");
         $(".diagnostics_images_show").attr('src', src);
     });
@@ -173,7 +175,6 @@ $(document).ready(function() {
       $(this).parent().toggleClass("active");
       $(this).parent().siblings().slideToggle();
     });
-
     // CONTENT 
 
     // CONTACTS 

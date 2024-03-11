@@ -243,21 +243,22 @@
           <form action="">
             <div class="care_form_select">
               <select>
-                <option selected>Выберите направление</option>
-                <option value="Hаправление 1">Hаправление 1</option>
-                <option value="Hаправление 2">Hаправление 2</option>
-                <option value="Hаправление 3">Hаправление 3</option>
-              </select>
-              <img src="img/care/direction.svg" alt="">
-            </div>
-            <div class="care_form_select">
-              <select>
                 <option selected>Выберите специалиста</option>
                 <option value="Прием кардиолога">Прием кардиолога</option>
                 <option value="Прием терапевта">Прием терапевта</option>
                 <option value="Прием нефролога">Прием нефролога</option>
+                <option value="Прием эндокринолога">Прием эндокринолога</option>
               </select>
               <img src="img/care/icon_doc.svg" alt="">
+            </div>
+            <div class="care_form_select">
+              <select>
+                <option selected>Выберите направление</option>
+                <option value="Лабораторная диагностика">Лабораторная диагностика</option>
+                <option value="Функциональная диагностика">Функциональная диагностика</option>
+                <option value="Прием рентген-эндоваскулярного специалиста">Прием рентген-эндоваскулярного специалиста</option>
+              </select>
+              <img src="img/care/direction.svg" alt="">
             </div>
             <button type="submit" class="btn_default">Записаться на прием</button>
           </form>
@@ -293,11 +294,11 @@
       <div class="container">
         <div class="row">
           <div class="col-12 col-lg-6 col-xl-6 diagnostics_images">
-            <img class="diagnostics_images_show" src="img/diagnostics/1.png" alt="">
+            <img class="diagnostics_images_show" src="img/diagnostics/1.webp" alt="">
             <div class="diagnostics_images_dots">
-              <img src="img/diagnostics/1.png" alt="">
-              <img src="img/diagnostics/1.png" alt="">
-              <img src="img/diagnostics/1.png" alt="">
+              <img class="active" src="img/diagnostics/1.webp" alt="">
+              <img src="img/diagnostics/2.webp" alt="">
+              <img src="img/diagnostics/3.webp" alt="">
             </div>
           </div>
           <div class="col-12 col-lg-6 col-xl-6 diagnostics_text">
@@ -562,7 +563,7 @@
             <input type="text" placeholder="Имя Фамилия">
             <input type="email" placeholder="Email">
             <input type="tel" placeholder="Номер телефона">
-            <!-- <input class="date" type="date" /> -->
+            <input class="date" type="date" />
             <select>
               <option selected>Выберите направление</option>
               <option value="Прием специалистов">Прием специалистов</option>
@@ -571,7 +572,7 @@
             </select>
             <select>
               <option selected>Выберите специалиста</option>
-              <option value="Прием кардиолога">Прием кардиолога</option>
+              <option value="Прием рентген-эндоваскулярного специалиста">Прием рентген-эндоваскулярного специалиста</option>
               <option value="Прием терапевта">Прием терапевта</option>
               <option value="Прием нефролога">Прием нефролога</option>
             </select>
@@ -637,17 +638,21 @@
               <input class="date" type="date" />
               <select>
                 <option selected>Выберите направление</option>
-                <option value="Hаправление 1">Hаправление 1</option>
-                <option value="Hаправление 2">Hаправление 2</option>
-                <option value="Hаправление 3">Hаправление 3</option>
+                <option value="Прием специалистов">Прием специалистов</option>
+                <option value="Лабораторная диагностика">Лабораторная диагностика</option>
+                <option value="Функциональная диагностика">Функциональная диагностика</option>
               </select>
               <select>
                 <option selected>Выберите специалиста</option>
-                <option value="Прием кардиолога">Прием кардиолога</option>
+                <option value="Прием рентген-эндоваскулярного специалиста">Прием рентген-эндоваскулярного специалиста</option>
                 <option value="Прием терапевта">Прием терапевта</option>
                 <option value="Прием нефролога">Прием нефролога</option>
               </select>
               <button class="btn_default" type="submit">Записаться на прием</button>
+              <label class="politic_accept">Согласие на обработку <a href="#">персональных данных</a>
+                <input type="checkbox">
+                <span class="checkmark"></span>
+              </label>
             </form>
             <p>*Запись через сайт является предварительной. 
               Мы свяжемся с Вами для подтверждения записи 
@@ -769,7 +774,7 @@
      <!-- FOOTER  -->
 
      <!-- MODAL  -->
-    <div class="modal fade" id="appointment" tabindex="-1" aria-labelledby="appointmentLabel" aria-hidden="true">
+     <div class="modal fade" id="appointment" tabindex="-1" aria-labelledby="appointmentLabel" aria-hidden="true">
       <div class="modal-dialog modal_white">
         <div class="modal-content">
           <div class="modal-header">
@@ -786,6 +791,10 @@
               <input type="text" placeholder="ФИО">
               <input type="tel" placeholder="Номер телефона">
               <input type="email" placeholder="Почта">
+              <label class="politic_accept">Согласие на обработку <a href="#">персональных данных</a>
+                <input type="checkbox">
+                <span class="checkmark"></span>
+              </label>
               <div class="modal_submit">
                 <button type="submit" class="btn_default">Записаться на прием</button>
               </div>
@@ -838,6 +847,10 @@
               <input type="text" placeholder="ФИО">
               <input type="tel" placeholder="Номер телефона">
               <input type="email" placeholder="Почта">
+              <label class="politic_accept">Согласие на обработку <a href="#">персональных данных</a>
+                <input type="checkbox">
+                <span class="checkmark"></span>
+              </label>
               <div class="modal_submit">
                 <button type="submit" class="btn_default">ОТправить</button>
               </div>
