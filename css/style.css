@@ -2090,6 +2090,10 @@ h2 {
   display: none;
   background: none;
 }
+.front_news_mob form input[type=date]::-webkit-inner-spin-button, .front_news_mob form input[type=date]::-webkit-calendar-picker-indicator {
+  display: none;
+  -webkit-appearance: none;
+}
 .front_news_mob form input[type=date]:not(.has-value):before {
   color: lightgray;
   content: attr(placeholder);
