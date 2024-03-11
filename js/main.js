@@ -30,6 +30,18 @@ $(document).ready(function() {
       $(this).parent().parent().find(".drop_menu").slideToggle();
       $(this).toggleClass("active");
     });
+
+    $(".sub_drop").hover(function () {
+      $(this).find(".sub_drop_menu").stop().slideDown();
+    }, function(){
+      $(this).find(".sub_drop_menu").stop().slideUp();
+    });
+
+    $(".drop_menu_sub span").click(function() {
+      $(this).toggleClass("open");
+      $(this).siblings(".drop_menu_sub_down").slideToggle();
+    });
+
     // HEADER 
     
     // MAIN 
@@ -174,6 +186,20 @@ $(document).ready(function() {
     $(".content_block_methods_item_head_drop").click(function() {
       $(this).parent().toggleClass("active");
       $(this).parent().siblings().slideToggle();
+    });
+
+    $(".content_block_doc_show").click(function() {
+      $(this).removeClass("active");
+      $(".content_block_doc_hide").addClass("active");
+      $(".content_block_card_description").addClass("hide");
+      $(".content_block_card_wrap").addClass("show");
+    });
+
+    $(".content_block_doc_hide").click(function() {
+      $(this).removeClass("active");
+      $(".content_block_doc_show").addClass("active");
+      $(".content_block_card_description").removeClass("hide");
+      $(".content_block_card_wrap").removeClass("show");
     });
     // CONTENT 
 
